@@ -1,0 +1,821 @@
+# baseURI: http://data.ehess.fr/ontology/vivo-fr#
+# imports: http://vivoweb.org/ontology/core
+# imports: http://xmlns.com/foaf/spec/20140114.rdf
+# prefix: vivofr
+
+@prefix acti: <http://vivoweb.org/ontology/activity-insight#> .
+@prefix afn: <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix ai: <http://vivoweb.org/ontology/activity-insight#> .
+@prefix aka: <http://vivoweb.org/ontology/aka#> .
+@prefix aktp: <http://www.aktors.org/ontology/portal#> .
+@prefix app: <http://eagle-i.org/ont/app/1.0/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cce: <http://vivoweb.org/ontology/cornell-cooperative-extension#> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix config: <http://vitro.mannlib.cornell.edu/ns/vitro/ApplicationConfiguration#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcelem: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix display: <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#> .
+@prefix ehess: <http://data.ehess.fr/ontology/ehess#> .
+@prefix ero: <http://purl.obolibrary.org/obo/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix far: <http://vitro.mannlib.cornell.edu/ns/reporting#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix geopolitical: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix hr: <http://vivo.cornell.edu/ns/hr/0.9/hr.owl#> .
+@prefix j.0: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix local: <http://vivo.cornell.edu/ontology/local#> .
+@prefix mann: <http://vivo.cornell.edu/ns/mannadditions/0.1#> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix ocrer: <http://purl.org/net/OCRe/research.owl#> .
+@prefix ocresd: <http://purl.org/net/OCRe/study_design.owl#> .
+@prefix ospcu: <http://vivoweb.org/ontology/cu-vivo-osp#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix owl2: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix pubmed: <http://vitro.mannlib.cornell.edu/ns/pubmed#> .
+@prefix pvs: <http://vivoweb.org/ontology/provenance-support#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsyn: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sce: <http://vivoweb.org/ontology/SchoolOfContinuingEducation#> .
+@prefix scires: <http://vivoweb.org/ontology/scientific-research#> .
+@prefix scirr: <http://vivoweb.org/ontology/scientific-research-resource#> .
+@prefix skco: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos2: <http://www.w3.org/2008/05/skos#> .
+@prefix socsci: <http://vivo.library.cornell.edu/ns/vivo/socsci/0.1#> .
+@prefix stars: <http://vitro.mannlib.cornell.edu/ns/cornell/stars/classes#> .
+@prefix statistics: <http://purl.org/net/OCRe/statistics.owl#> .
+@prefix study_protocol: <http://purl.org/net/OCRe/study_protocol.owl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix swvs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+@prefix vivoc: <http://vivo.library.cornell.edu/ns/0.1#> .
+@prefix vivofr: <http://data.ehess.fr/ontology/vivo-fr#> .
+@prefix wcmc: <http://weill.cornell.edu/vivo/ontology/wcmc#> .
+@prefix wos: <http://vivo.mannlib.cornell.edu/ns/ThomsonWOS/0.1#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vivofr:
+  a owl:Ontology ;
+  cc:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  obo:IAO_0000115 "Complement to the Vivo ontology describing research staff and structures in French higher education and research institutions in order to allow the management of such data in Vivo software."@fr-FR ;
+  obo:IAO_0000115 "Complément à l'ontologie Vivo décrivant les personnel et les structures de recherche dans établissement ESR français afin de permettre la prise en charge de telles données dans Vivo"@fr-FR ;
+  terms:creator <http://data.ehess.fr/person/cbrando> ;
+  terms:creator <http://data.ehess.fr/person/jdornbusch> ;
+  terms:issued "2020-10-15"^^xsd:date ;
+  terms:rights "CC BY-SA 4.0" ;
+  vann:preferredNamespacePrefix "vivofr" ;
+  vann:preferredNamespaceUri vivofr: ;
+  vitro:ontologyPrefixAnnot "vivofr" ;
+  rdfs:label "Vivo FR Ontology"@en-US ;
+  rdfs:label "ontologie Vivo FR"@fr-FR ;
+  owl:imports <http://vivoweb.org/ontology/core> ;
+  owl:imports <http://xmlns.com/foaf/spec/20140114.rdf> ;
+  owl:versionInfo "Version 1.0 - 2018-04-03" ;
+.
+vivofr:CLS_0000001
+  a owl:Class ;
+  dcelem:description "Class intended to classify members at display level (typically, on a website)"@en-US ;
+  dcelem:description "Classe destinée à permettre le rubriquage des membres au niveau de l'affichage (typiquement, sur un site web)"@fr-FR ;
+  rdfs:label "classe de membres"@fr-FR ;
+  rdfs:label "members class"@en-US ;
+  rdfs:subClassOf owl:Thing ;
+.
+vivofr:FNC_0000001
+  a owl:Class ;
+  obo:IAO_0000115 "Une fonction, un emploi dans une organisation"@fr-FR ;
+  rdfs:label "fonction"@fr-FR ;
+  rdfs:label "function"@en-US ;
+  rdfs:subClassOf vivofr:REL_0000001 ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom vivo:DateTimeInterval ;
+      owl:onProperty vivo:dateTimeInterval ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty vivo:rank ;
+      owl:someValuesFrom xsd:int ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty vivo:relates ;
+      owl:someValuesFrom foaf:Organization ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty vivo:relates ;
+      owl:someValuesFrom foaf:Person ;
+    ] ;
+  owl:equivalentClass vivo:Position ;
+.
+vivofr:FNC_0000002
+  a owl:Class ;
+  rdfs:label "autre fonction"@fr-FR ;
+  rdfs:label "other function"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000001 ;
+.
+vivofr:FNC_0000003
+  a rdfs:Class ;
+  a owl:Class ;
+  obo:IAO_0000115 "Liaison entre une personne et un établissement, si elle est formalisée par l'appartenance à un corps administratif"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "administrative corps"@en-US ;
+  rdfs:label "corps administratif"@fr-FR ;
+  rdfs:subClassOf vivofr:FNC_0000001 ;
+  owl:disjointWith vivofr:FNC_0000004 ;
+  owl:disjointWith vivofr:FNC_0000005 ;
+  owl:disjointWith vivofr:FNC_0000006 ;
+  owl:disjointWith vivofr:FNC_0000007 ;
+.
+vivofr:FNC_0000004
+  a owl:Class ;
+  rdfs:label "autre fonction d'enseignement"@fr-FR ;
+  rdfs:label "other teacher position"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000002 ;
+.
+vivofr:FNC_0000005
+  a owl:Class ;
+  rdfs:label "autre fonction d'enseignement et de recherche"@fr-FR ;
+  rdfs:label "other teacher and researcher position"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000002 ;
+.
+vivofr:FNC_0000006
+  a owl:Class ;
+  rdfs:label "autre fonction de support administratif"@fr-FR ;
+  rdfs:label "other administrative support position"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000002 ;
+.
+vivofr:FNC_0000007
+  a owl:Class ;
+  rdfs:label "autre fonction de support à la recherche"@fr-FR ;
+  rdfs:label "other research support position"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000002 ;
+.
+vivofr:FNC_0000008
+  a owl:Class ;
+  obo:IAO_0000115 "Une assistante ou un assistant ingénieur"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "assistant research engineer"@en-US ;
+  rdfs:label "assistant.e ingénieur.e"@fr-FR ;
+  rdfs:subClassOf vivofr:FNC_0000003 ;
+.
+vivofr:FNC_0000009
+  a owl:Class ;
+  obo:IAO_0000115 "Personnels qui concourent à l'accomplissement des missions de la recherche dans un organisme de recherche ou un établissement d'enseignement supérieur"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "chargé.e de recherches"@fr-FR ;
+  rdfs:label "tenured junior/senior researcher"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000003 ;
+.
+vivofr:FNC_0000010
+  a owl:Class ;
+  obo:IAO_0000115 "Une chercheure ou un chercheur sous statut contractuel"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "chercheur.e contractuel.le"@fr-FR ;
+  rdfs:label "fixed-term contract researcher"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000021 ;
+.
+vivofr:FNC_0000011
+  a owl:Class ;
+  obo:IAO_0000115 "Fonction de directrice ou directeur de recherches au CNRS"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "directeur.trice de recherches"@fr-FR ;
+  rdfs:label "research professor"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000003 ;
+.
+vivofr:FNC_0000012
+  a owl:Class ;
+  obo:IAO_0000115 "Fonction de directrice ou directeur d'études à l'EHESS, à l'ENC ou à l'EPHE"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "(full) professor"@en-US ;
+  rdfs:label "directeur.trice d'études"@fr-FR ;
+  rdfs:subClassOf vivofr:FNC_0000003 ;
+.
+vivofr:FNC_0000013
+  a owl:Class ;
+  obo:IAO_0000115 "Fonction de directrice ou directeur d'études cumulant à l'EHESS, à l'ENC ou à l'EPHE"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "(full) professor"@en-US ;
+  rdfs:label "directeur.trice d'études cumulant"@fr-FR ;
+  rdfs:subClassOf vivofr:FNC_0000003 ;
+.
+vivofr:FNC_0000014
+  a owl:Class ;
+  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Ingénieur_de_recherche"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "ingénieur.e de recherche"@fr-FR ;
+  rdfs:label "senior research engineer"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000003 ;
+.
+vivofr:FNC_0000015
+  a owl:Class ;
+  obo:IAO_0000115 "http://www.enseignementsup-recherche.gouv.fr/cid23195/ingenieur-d-etudes.html"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "ingénieur.e d'études"@fr-FR ;
+  rdfs:label "research engineer"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000003 ;
+.
+vivofr:FNC_0000016
+  a owl:Class ;
+  obo:IAO_0000115 "Un des deux corps d'enseignants chercheurs de l'université française"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "associate Professor"@en-US ;
+  rdfs:label "maître.sse de conférences"@fr-FR ;
+  rdfs:subClassOf vivofr:FNC_0000003 ;
+.
+vivofr:FNC_0000017
+  obo:IAO_0000115 "Un des deux corps d'enseignants chercheurs de l'université française"@fr-FR ;
+  rdfs:label "(full) professor"@en-US ;
+  rdfs:label "professeur.e des universités"@fr-FR ;
+  owl:disjointWith vivofr:FNC_0000018 ;
+.
+vivofr:FNC_0000018
+  a owl:Class ;
+  obo:IAO_0000115 "Professeure ou professeur des universités retraité ayant conservé rang et privilèges"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "emeritus/a Professor"@en-US ;
+  rdfs:label "professeur.e émerite"@fr-FR ;
+  rdfs:subClassOf vivofr:FNC_0000003 ;
+.
+vivofr:FNC_0000019
+  a owl:Class ;
+  obo:IAO_0000115 "Fonction de postdoctorant"@fr-FR ;
+  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Chercheur_postdoctoral"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "post-doctorat"@fr-FR ;
+  rdfs:label "postdoc"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000002 ;
+.
+vivofr:FNC_0000020
+  a owl:Class ;
+  obo:IAO_0000115 "Professeure ou professeur des universités"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "(full) professor"@en-US ;
+  rdfs:label "professeur.e des universités"@fr-FR ;
+  rdfs:subClassOf vivofr:FNC_0000003 ;
+.
+vivofr:FNC_0000021
+  a owl:Class ;
+  rdfs:label "autre fonction de recherche"@fr-FR ;
+  rdfs:label "other researcher position"@en-US ;
+  rdfs:subClassOf vivofr:FNC_0000002 ;
+.
+vivofr:MMB_0000001
+  a owl:Class ;
+  obo:IAO_0000115 "Liaison entre une personne et une structure de recherche ou une entité administrative"@fr-FR ;
+  obo:IAO_0000115 "Membership to a structure like research unit."@en-US ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "appartenance"@fr-FR ;
+  rdfs:label "membership"@en-US ;
+  rdfs:subClassOf vivofr:REL_0000001 ;
+.
+vivofr:MMB_0000002
+  a owl:Class ;
+  obo:IAO_0000115 "Appartenance permanente à une structure (typiquement une unité de recherche) à titre principal"@fr-FR ;
+  obo:IAO_0000115 "Permanent main membership (typically, to a research structure)"@en-US ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "appartenance permanente à titre principal"@fr-FR ;
+  rdfs:label "permanent main membership"@en-US ;
+  rdfs:subClassOf vivofr:MMB_0000001 ;
+.
+vivofr:MMB_0000003
+  a owl:Class ;
+  obo:IAO_0000115 "Appartenance permanente à une structure (typiquement une unité de recherche) à titre principal"@fr-FR ;
+  obo:IAO_0000115 "Permanent main membership (typically, to a research structure)"@en-US ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "appartenance permanente à titre secondaire"@fr-FR ;
+  rdfs:label "permanent accessory membership"@en-US ;
+  rdfs:subClassOf vivofr:MMB_0000001 ;
+.
+vivofr:MMB_0000004
+  a owl:Class ;
+  obo:IAO_0000115 "Appartenance non permanente à une structure (typiquement une unité de recherche) à titre principal"@fr-FR ;
+  obo:IAO_0000115 "Transient main membership (typically, to a research structure)"@en-US ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "appartenance non permanente à titre principal"@fr-FR ;
+  rdfs:label "transient main membership"@en-US ;
+  rdfs:subClassOf vivofr:MMB_0000001 ;
+.
+vivofr:MMB_0000005
+  a owl:Class ;
+  obo:IAO_0000115 "Appartenance non permanente à une structure (typiquement une unité de recherche) à titre secondaire"@fr-FR ;
+  obo:IAO_0000115 "Transient accessory membership (typically, to a research structure)"@en-US ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "appartenance non permanente à titre secondaire"@fr-FR ;
+  rdfs:label "transient accessory membership"@en-US ;
+  rdfs:subClassOf vivofr:MMB_0000001 ;
+.
+vivofr:MMB_0000006
+  a owl:Class ;
+  obo:IAO_0000115 "Appartenance à une structure (typiquement une unité de recherche) en tant que membre d'honneur, émérite ou retraité"@fr-FR ;
+  obo:IAO_0000115 "Membership (typically, to a research structure) as honorary, emeritus or retired member"@en-US ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "appartenance à une structure en tant que membre d'honneur, émérite ou retraité"@fr-FR ;
+  rdfs:label "membership as honorary, emeritus or retired member"@en-US ;
+  rdfs:subClassOf vivofr:MMB_0000001 ;
+.
+vivofr:MMB_0000007
+  a owl:Class ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "appartenance en tant que post-doctorant"@fr-FR ;
+  rdfs:label "membership as postdoc"@en-US ;
+  rdfs:subClassOf vivofr:MMB_0000004 ;
+.
+vivofr:MMB_0000008
+  a owl:Class ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "appartenance en tant que doctorant"@fr-FR ;
+  rdfs:label "membership as Phd Student"@en-US ;
+  rdfs:subClassOf vivofr:MMB_0000004 ;
+.
+vivofr:ORG_0000002
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "research organization"@en-US ;
+  rdfs:label "structure de recherche"@fr-FR ;
+  rdfs:subClassOf foaf:Organization ;
+.
+vivofr:ORG_0000003
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "CNRS research organization"@en-US ;
+  rdfs:label "structure de recherche CNRS"@fr-FR ;
+  rdfs:subClassOf foaf:Organization ;
+.
+vivofr:ORG_0000004
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "institution research organization"@en-US ;
+  rdfs:label "structure de recherche établissement"@fr-FR ;
+  rdfs:subClassOf foaf:Organization ;
+.
+vivofr:ORG_0000005
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "level 1 research organization"@en-US ;
+  rdfs:label "structure de recherche de niveau 1"@fr-FR ;
+  rdfs:subClassOf vivofr:ORG_0000002 ;
+.
+vivofr:ORG_0000006
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "level 2 research organization"@en-US ;
+  rdfs:label "structure de recherche de niveau 2"@fr-FR ;
+  rdfs:subClassOf vivofr:ORG_0000002 ;
+.
+vivofr:ORG_0000007
+  a rdfs:Class ;
+  a owl:Class ;
+  rdfs:label "level 3 research organization"@en-US ;
+  rdfs:label "structure de recherche de niveau 3"@fr-FR ;
+  rdfs:subClassOf vivofr:ORG_0000002 ;
+.
+vivofr:ORG_0000008
+  a owl:Class ;
+  obo:IAO_0000115 "In french, Unité de Recherche" ;
+  obo:IAO_0000115 "Équivalent d'un laboratoire : https://fr.wikipedia.org/wiki/Laboratoire_de_recherche, Par exemple le CRH (UMR 8558)"@fr-FR ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouporganizations> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "research unit"@en-US ;
+  rdfs:label "unité de recherche"@fr-FR ;
+  rdfs:subClassOf vivofr:ORG_0000003 ;
+  rdfs:subClassOf vivofr:ORG_0000006 ;
+.
+vivofr:ORG_0000009
+  a owl:Class ;
+  obo:IAO_0000115 "In french, unité de service" ;
+  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Unit%C3%A9_mixte_de_service"@fr-FR ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouporganizations> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "joint service unit"@en-US ;
+  rdfs:label "unité mixte de service"@fr-FR ;
+  rdfs:subClassOf vivofr:ORG_0000003 ;
+  rdfs:subClassOf vivofr:ORG_0000006 ;
+.
+vivofr:ORG_0000010
+  a owl:Class ;
+  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Universit%C3%A9"@fr-FR ;
+  rdfs:label "university"@en-US ;
+  rdfs:label "université"@fr-FR ;
+  rdfs:subClassOf foaf:Organization ;
+  owl:equivalentClass vivo:University ;
+.
+vivofr:ORG_0000011
+  a owl:Class ;
+  obo:IAO_0000115 "In french, Structure fédérative de recherche" ;
+  obo:IAO_0000115 "Une structure férérative de recherche"@fr-FR ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouporganizations> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "federative Research Structure"@en-US ;
+  rdfs:label "structure fédérative de recherche"@fr-FR ;
+  rdfs:subClassOf vivofr:ORG_0000003 ;
+  rdfs:subClassOf vivofr:ORG_0000007 ;
+.
+vivofr:ORG_0000012
+  a owl:Class ;
+  obo:IAO_0000115 "In french, thématique, a research team without permanent members" ;
+  obo:IAO_0000115 "Une équipe de recherche sans membres permanents ayant une thématique commune"@fr-FR ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouporganizations> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "theme"@en-US ;
+  rdfs:label "thématique"@fr-FR ;
+  rdfs:subClassOf vivofr:ORG_0000003 ;
+  rdfs:subClassOf vivofr:ORG_0000005 ;
+.
+vivofr:ORG_0000013
+  a owl:Class ;
+  obo:IAO_0000115 "Une équipe de recherche rassemblant des personnes, ayant une dépendance envers une unité"@fr-FR ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouporganizations> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "research Team"@en-US ;
+  rdfs:label "équipe de recherche"@fr-FR ;
+  rdfs:subClassOf vivofr:ORG_0000003 ;
+  rdfs:subClassOf vivofr:ORG_0000005 ;
+.
+vivofr:ORG_0000014
+  a owl:Class ;
+  obo:IAO_0000115 "Une structure dédiée à l'administration d'un domaine particulier du fonctionnement de l'établissement."@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouporganizations> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "administrative entity"@en-US ;
+  rdfs:label "entité administrative"@fr-FR ;
+  rdfs:subClassOf foaf:Organization ;
+.
+vivofr:ORG_0000015
+  a owl:Class ;
+  obo:IAO_0000115 "Une direction, structure rattachée à la présidence et qui comprend généralement des services."@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouporganizations> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "department"@en-US ;
+  rdfs:label "direction"@fr-FR ;
+  rdfs:subClassOf vivofr:ORG_0000014 ;
+.
+vivofr:PRP_0000001
+  a owl:DatatypeProperty ;
+  obo:IAO_0000115 "Les maîtrises de conférences et directions d'études de l'EHESS sont l'équivalent de chaires dotées d'un intitulé permanent. Elles constituent l'Affiche des enseignements de recherche de l'Ecole"@fr-FR ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#editor> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#dbAdmin> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#dbAdmin> ;
+  rdfs:domain vivofr:FNC_0000012 ;
+  rdfs:domain vivofr:FNC_0000016 ;
+  rdfs:label "a une chaire"@fr-FR ;
+  rdfs:label "has a research chair"@en-US ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf vivo:identifier ;
+.
+vivofr:PRP_0000002
+  a owl:DatatypeProperty ;
+  a owl:FunctionalProperty ;
+  obo:IAO_0000115 "Identifiant de l'utilisateur, commun aux différentes applications de la recherche"@fr-FR ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#editor> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#dbAdmin> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#dbAdmin> ;
+  rdfs:domain foaf:Person ;
+  rdfs:label "a pour identifiant interne"@fr-FR ;
+  rdfs:label "has internal identifier"@en-US ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf vivo:identifier ;
+.
+vivofr:PRP_0000003
+  a owl:DatatypeProperty ;
+  a owl:FunctionalProperty ;
+  obo:IAO_0000115 "L'identifiant spécifique d'une ressource (structure, personne...) au sein du système d'information"@fr-FR ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#editor> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#dbAdmin> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#dbAdmin> ;
+  rdfs:domain owl:Thing ;
+  rdfs:label "a pour identifiant technique"@fr-FR ;
+  rdfs:label "has technical identifier"@en-US ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf vivo:identifier ;
+.
+vivofr:PRP_0000004
+  a owl:DatatypeProperty ;
+  a owl:FunctionalProperty ;
+  vitro:displayLimitAnnot "1"^^xsd:int ;
+  vitro:displayRankAnnot "10"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inPropertyGroupAnnot <http://vivoweb.org/ontology#vitroPropertyGroupoverview> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:publicDescriptionAnnot "A short narrative summary to be used as a single descriptive chair statement." ;
+  rdfs:domain foaf:Agent ;
+  rdfs:label "chair"@en-US ;
+  rdfs:label "chaire"@fr-FR ;
+  rdfs:subPropertyOf vivo:chaire ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+.
+vivofr:PRP_0000005
+  a owl:DatatypeProperty ;
+  a owl:InverseFunctionalProperty ;
+  vitro:displayLimitAnnot "1"^^xsd:int ;
+  vitro:displayRankAnnot "10"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inPropertyGroupAnnot <http://vivoweb.org/ontology#vitroPropertyGroupoverview> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:publicDescriptionAnnot "TODO." ;
+  rdfs:label "IdRef identifier"@en-US ;
+  rdfs:label "identifiant IdRef"@fr-FR ;
+  rdfs:subPropertyOf vivo:identifier ;
+.
+vivofr:PRS_0000001
+  a owl:Class ;
+  obo:IAO_0000115 "Une personne chargée de produire et de diffuser des savoirs au sein d'un établissement d'enseignement supérieur."@fr-FR ;
+  rdfs:label "personnel Académique"@fr-FR ;
+  rdfs:subClassOf foaf:Person ;
+  owl:equivalentClass vivo:FacultyMember ;
+.
+vivofr:PRS_0000002
+  a owl:Class ;
+  obo:IAO_0000115 "Personnels ingénieurs, administratifs, techniques, ouvriers et de service (IATOS)"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "personnel de soutien"@fr-FR ;
+  rdfs:label "support staff"@en-US ;
+  rdfs:subClassOf foaf:Person ;
+.
+vivofr:PRS_0000003
+  a owl:Class ;
+  obo:IAO_0000115 "Personnels ingénieurs, administratifs, techniques, ouvriers et de service (IATOS) rattachés aux entités administratives"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "administrative Support staff"@en-US ;
+  rdfs:label "personnel de soutien administratif"@fr-FR ;
+  rdfs:subClassOf vivofr:PRS_0000002 ;
+.
+vivofr:PRS_0000004
+  a owl:Class ;
+  obo:IAO_0000115 "Personnels ingénieurs, administratifs, techniques, ouvriers et de service (IATOS) rattachés aux unités de recherche ou de soutien"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "personnel de soutien à la recherche"@fr-FR ;
+  rdfs:label "research Support staff"@en-US ;
+  rdfs:subClassOf vivofr:PRS_0000002 ;
+.
+vivofr:PRS_0000005
+  a owl:Class ;
+  obo:IAO_0000115 "Titulaire du grade académique de docteur"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "docteur.e"@fr-FR ;
+  rdfs:label "philosophiæ doctor"@en-US ;
+  rdfs:subClassOf foaf:Person ;
+.
+vivofr:PRS_0000006
+  a owl:Class ;
+  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Doctorant"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "doctorant.e"@fr-FR ;
+  rdfs:label "phD Student"@en-US ;
+  rdfs:subClassOf foaf:Person ;
+.
+vivofr:PRS_0000007
+  a owl:Class ;
+  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Habilitation_universitaire#En_France"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "habilité à diriger des recherches"@fr-FR ;
+  rdfs:subClassOf foaf:Person ;
+  skos:altLabel "HDR"@fr-FR ;
+.
+vivofr:PRS_0000008
+  a owl:Class ;
+  obo:IAO_0000115 "Une assistante ou un assistant ingénieur"@fr-FR ;
+  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Chercheur_postdoctoral"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "postDoctorant.e"@fr-FR ;
+  rdfs:label "postdoc"@en-US ;
+  rdfs:subClassOf foaf:Person ;
+  owl:equivalentClass vivo:PostDoc ;
+.
+vivofr:PRS_0000009
+  a owl:Class ;
+  obo:IAO_0000115 "Personne exerçant des activités de recherche au niveau ESR, sans avoir d'activité d'enseignement"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "chercheur"@fr-FR ;
+  rdfs:label "researcher"@en-US ;
+  rdfs:subClassOf vivofr:PRS_0000001 ;
+.
+vivofr:PRS_0000010
+  a owl:Class ;
+  obo:IAO_0000115 "Personne exerçant des activités d'enseignement au niveau ESR, sans avoir d'activité de recherche"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "enseignant"@fr-FR ;
+  rdfs:label "teacher"@en-US ;
+  rdfs:subClassOf vivofr:PRS_0000001 ;
+.
+vivofr:PRS_0000011
+  a owl:Class ;
+  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Enseignant-chercheur"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "enseignant.e-chercheur.e"@fr-FR ;
+  rdfs:label "teacher researcher"@en-US ;
+  rdfs:subClassOf vivofr:PRS_0000001 ;
+  rdfs:subClassOf [
+      owl:unionOf (
+          [
+            a owl:Restriction ;
+            owl:onProperty vivo:relatedBy ;
+            owl:someValuesFrom vivofr:FNC_0000012 ;
+          ]
+          [
+            a owl:Restriction ;
+            owl:onProperty vivo:relatedBy ;
+            owl:someValuesFrom vivofr:FNC_0000016 ;
+          ]
+          [
+            a owl:Restriction ;
+            owl:onProperty vivo:relatedBy ;
+            owl:someValuesFrom vivofr:FNC_0000017 ;
+          ]
+        ) ;
+    ] ;
+.
+vivofr:PRS_0000012
+  a owl:Class ;
+  obo:IAO_0000115 "Une enseignante-chercheure ou un enseignant-chercheur s'étant vu accorder l'éméritat (https://fr.wikipedia.org/wiki/Professeur_%C3%A9m%C3%A9rite)"@fr-FR ;
+  vitro:displayLimitAnnot "-1"^^xsd:int ;
+  vitro:displayRankAnnot "-1"^^xsd:int ;
+  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
+  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+  rdfs:label "enseignant.e-chercheur.e émérite"@fr-FR ;
+  rdfs:label "teacher researcher emeritus"@en-US ;
+  rdfs:subClassOf vivofr:PRS_0000001 ;
+.
+vivofr:REL_0000001
+  a owl:Class ;
+  obo:IAO_0000115 "Relation réifiée entre deux entités"@fr-FR ;
+  rdfs:label "relation"@fr-FR ;
+  owl:equivalentClass vivo:Relationship ;
+.
+<http://data.ehess.fr/person/cbrando>
+  a foaf:Person ;
+.
+<http://data.ehess.fr/person/jdornbusch>
+  a foaf:Person ;
+.
