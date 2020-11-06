@@ -1,12 +1,13 @@
-# imports: http://xmlns.com/foaf/0.1/
-# imports: http://vivoweb.org/ontology/core
-# imports: http://data.ehess.fr/ontology/vivo-ehess#
+# baseURI: http://data.ehess.fr/ontology/vivo-ehess/exemple3
+# imports: http://data.ehess.fr/ontology/vivo-ehess
 # imports: http://data.ehess.fr/ontology/vivo-fr#
+# imports: http://vivoweb.org/ontology/core
+# imports: http://xmlns.com/foaf/0.1/
 
-
+@prefix : <http://data.ehess.fr/ontology/vivo-ehess/exemple3#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix j.0: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix geo: <http://aims.fao.org/aos/geopolitical.owl#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -15,14 +16,49 @@
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix vivo: <http://vivoweb.org/ontology/core#> .
-@prefix vivofr: <http://data.ehess.fr/ontology/vivo-fr#> .
 @prefix vivoehess: <http://data.ehess.fr/ontology/vivo-ehess#> .
+@prefix vivofr: <http://data.ehess.fr/ontology/vivo-fr#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://data.ehess.fr/individual/cvl2vt49p>
+  a vivofr:ORG_0000008 ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8177" ;
+  obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
+  obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
+  vivo:abbreviation "iiac" ;
+  rdfs:label "Institut interdisciplinaire d'anthropologie du contemporain"@fr-fr ;
+  rdfs:label "Interdisciplinary Institute for Contemporary Anthropology"@en-us ;
+.
+<http://data.ehess.fr/individual/cvl2vt49p_cl1>
+  a vivofr:CLS_0000001 ;
+  vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
+  rdfs:label "Full members"@en-us ;
+  rdfs:label "Membres titulaires"@fr-fr ;
+.
+<http://data.ehess.fr/individual/cvl2vt49p_cl2>
+  a vivofr:CLS_0000001 ;
+  vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
+  rdfs:label "Correspondants"@fr-fr ;
+  rdfs:label "Correspondents"@en-us ;
+.
+<http://data.ehess.fr/individual/cvl2vt49p_cl3>
+  a vivofr:CLS_0000001 ;
+  vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
+  rdfs:label "Collaborateurs"@fr-fr ;
+  rdfs:label "Collaborators"@en-us ;
+.
+<http://data.ehess.fr/individual/cvl2vt49p_rlopez_corresp>
+  a vivoehess:MMB_0000003 ;
+  vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
+  vivo:relates <http://data.ehess.fr/individual/cvl2vt49p_cl2> ;
+  vivo:relates <http://data.ehess.fr/individual/mp4ytut6gy> ;
+  rdfs:label "Correspondant étranger"@fr-fr ;
+  rdfs:label "Foreign correspondent"@en-us ;
+.
 <http://data.ehess.fr/individual/mp4ytut6gy>
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantInterne> "f3xudu2bf" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "lodel_iiac#rlopez" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#idref> "012345678" ;
+  vivoehess:aPourIdentifiantInterne "f3xudu2bf" ;
+  vivoehess:aPourIdentifiantTechnique "lodel_iiac#rlopez" ;
+  vivoehess:idref "012345678" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/mp4ytut6gy_665> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "ricardo.lopez@gmail.com" ;
   vivo:overview "Un exemple de professeur invité, issu d'une université étrangère" ;
@@ -40,51 +76,23 @@
   a vcard:Work ;
   vcard:email "ricardo.lopez@gmail.com" ;
 .
-<http://data.ehess.fr/individual/ya59b1zqj_rlopez>
-    a vivofr:FNC_0000004 ;
-    vivo:relates <http://data.ehess.fr/individual/ya59b1zqj> ;
-    vivo:relates <http://data.ehess.fr/individual/mp4ytut6gy> ;
-    rdfs:label "Professeur"@fr-fr ;
-    rdfs:label "Professor"@en-us ;
-.
 <http://data.ehess.fr/individual/ya59b1zqj>
-    a vivofr:ORG_0000010 ;
-    <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "lodel_cadis#centro de investigaciones y estudios superiores en antropologia social (ciesas  mexico)" ;
-    vivo:abbreviation "centro_de_investigaciones_y_estudios_superiores_en_antropologia_social_(ciesas_mexico)" ;
-    rdfs:label "Centro de Investigaciones y Estudios Superiores en Antropología Social (CIESAS  México)"@fr-fr ;
+  a vivofr:ORG_0000010 ;
+  vivoehess:aPourIdentifiantTechnique "lodel_cadis#centro de investigaciones y estudios superiores en antropologia social (ciesas  mexico)" ;
+  vivo:abbreviation "centro_de_investigaciones_y_estudios_superiores_en_antropologia_social_(ciesas_mexico)" ;
+  rdfs:label "Centro de Investigaciones y Estudios Superiores en Antropología Social (CIESAS  México)"@fr-fr ;
 .
-<http://data.ehess.fr/individual/cvl2vt49p_rlopez_corresp>
-    a <http://data.ehess.fr/ontology/vivo-ehess#MMB_0000003> ;
-    vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
-    vivo:relates <http://data.ehess.fr/individual/mp4ytut6gy> ;
-    vivo:relates <http://data.ehess.fr/individual/cvl2vt49p_cl2> ;
-    rdfs:label "Correspondant étranger"@fr-fr ;
-    rdfs:label "Foreign correspondent"@en-us ;
+<http://data.ehess.fr/individual/ya59b1zqj_rlopez>
+  a vivofr:FNC_0000004 ;
+  vivo:relates <http://data.ehess.fr/individual/mp4ytut6gy> ;
+  vivo:relates <http://data.ehess.fr/individual/ya59b1zqj> ;
+  rdfs:label "Professeur"@fr-fr ;
+  rdfs:label "Professor"@en-us ;
 .
-<http://data.ehess.fr/individual/cvl2vt49p>
-    a vivofr:ORG_0000008 ;
-    <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#UMR8177" ;
-    obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
-    obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
-    vivo:abbreviation "iiac" ;
-    rdfs:label "Institut interdisciplinaire d'anthropologie du contemporain"@fr-fr ;
-    rdfs:label "Interdisciplinary Institute for Contemporary Anthropology"@en-us ;
-.
-<http://data.ehess.fr/individual/cvl2vt49p_cl1>
-    a <http://data.ehess.fr/ontology/vivo-fr#CLS_0000001> ;
-    vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
-    rdfs:label "Membres titulaires"@fr-fr ;
-    rdfs:label "Full members"@en-us ;
-.
-<http://data.ehess.fr/individual/cvl2vt49p_cl2>
-    a <http://data.ehess.fr/ontology/vivo-fr#CLS_0000001> ;
-    vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
-    rdfs:label "Correspondants"@fr-fr ;
-    rdfs:label "Correspondents"@en-us ;
-.
-<http://data.ehess.fr/individual/cvl2vt49p_cl3>
-    a <http://data.ehess.fr/ontology/vivo-fr#CLS_0000001> ;
-    vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
-    rdfs:label "Collaborateurs"@fr-fr ;
-    rdfs:label "Collaborators"@en-us ;
+<http://data.ehess.fr/ontology/vivo-ehess/exemple3>
+  a owl:Ontology ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess> ;
+  owl:imports vivofr: ;
+  owl:imports <http://vivoweb.org/ontology/core> ;
+  owl:imports foaf: ;
 .

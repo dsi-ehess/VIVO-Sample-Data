@@ -1,12 +1,12 @@
-# imports: http://xmlns.com/foaf/0.1/
-# imports: http://vivoweb.org/ontology/core
-# imports: http://data.ehess.fr/ontology/vivo-ehess#
+# baseURI: http://data.ehess.fr/ontology/vivo-ehess/export2
+# imports: http://data.ehess.fr/ontology/vivo-ehess
 # imports: http://data.ehess.fr/ontology/vivo-fr#
+# imports: http://vivoweb.org/ontology/core
 
-
+@prefix : <http://data.ehess.fr/ontology/vivo-ehess/export2#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix j.0: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix geo: <http://aims.fao.org/aos/geopolitical.owl#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -15,13 +15,16 @@
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix vivo: <http://vivoweb.org/ontology/core#> .
-@prefix vivofr: <http://data.ehess.fr/ontology/vivo-fr#> .
 @prefix vivoehess: <http://data.ehess.fr/ontology/vivo-ehess#> .
+@prefix vivofr: <http://data.ehess.fr/ontology/vivo-fr#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<file:///mnt/ehess/00-GIT/VIVO-Sample-Data/sample-dataset/export2.ttl>
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess> ;
+.
 <http://data.ehess.fr/individual/2hgtcwtu4>
   a vivofr:ORG_0000008 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#UMR8036" ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8036" ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
   vivo:abbreviation "cespra" ;
@@ -29,7 +32,7 @@
   rdfs:label "Raymond Aron Center for Sociological and Political Studies (CESPRA)"@en-us ;
 .
 <http://data.ehess.fr/individual/2hgtcwtu4_sar_stat>
-  a <http://data.ehess.fr/ontology/vivo-ehess#MBE_0000001> ;
+  a vivoehess:MBE_0000001 ;
   vivo:relates <http://data.ehess.fr/individual/2hgtcwtu4> ;
   vivo:relates <http://data.ehess.fr/individual/n6vd2xs2ei> ;
   rdfs:label "membre statutaire"@fr-fr ;
@@ -37,19 +40,19 @@
 .
 <http://data.ehess.fr/individual/3k6jlppwl>
   a vivofr:ORG_0000014 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ldap#12313" ;
+  vivoehess:aPourIdentifiantTechnique "ldap#12313" ;
   vivo:abbreviation "polenumrecherche" ;
   rdfs:label "Pôle numérique recherche"@fr-fr ;
 .
 <http://data.ehess.fr/individual/3k6jlppwl_jdornbus_stat>
-  a <http://data.ehess.fr/ontology/vivo-ehess#MBE_0000001> ;
+  a vivoehess:MBE_0000001 ;
   vivo:relates <http://data.ehess.fr/individual/3k6jlppwl> ;
   vivo:relates <http://data.ehess.fr/individual/nd658p5uaz> ;
   rdfs:label "membre statutaire"@fr-fr ;
   rdfs:label "statutory membership"@en-us ;
 .
 <http://data.ehess.fr/individual/3k6jlppwl_mgevauda_stat>
-  a <http://data.ehess.fr/ontology/vivo-ehess#MBE_0000001> ;
+  a vivoehess:MBE_0000001 ;
   vivo:relates <http://data.ehess.fr/individual/3k6jlppwl> ;
   vivo:relates <http://data.ehess.fr/individual/nad6i9kwzo> ;
   rdfs:label "membre statutaire"@fr-fr ;
@@ -57,7 +60,7 @@
 .
 <http://data.ehess.fr/individual/5lr3hjr9h>
   a vivofr:ORG_0000008 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#UMR8216" ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8216" ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
   vivo:abbreviation "cesor" ;
@@ -65,7 +68,7 @@
 .
 <http://data.ehess.fr/individual/9b7ixpuin>
   a vivofr:ORG_0000010 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#CNRS" ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#CNRS" ;
   vivo:abbreviation "cnrs" ;
   rdfs:label "Centre National de la Recherche Scientifique"@fr-fr ;
 .
@@ -97,7 +100,7 @@
 .
 <http://data.ehess.fr/individual/btc8cvxadk>
   a vivofr:ORG_0000008 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#UMR8564" ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8564" ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
   vivo:abbreviation "ceias" ;
@@ -105,13 +108,13 @@
   rdfs:label "Centre for South Asian Studies"@en-en ;
 .
 <http://data.ehess.fr/individual/btc8cvxadk_acastain_stat>
-  a <http://data.ehess.fr/ontology/vivo-ehess#MBE_0000001> ;
+  a vivoehess:MBE_0000001 ;
   vivo:relates <http://data.ehess.fr/individual/btc8cvxadk> ;
   vivo:relates <http://data.ehess.fr/individual/nam3e2rlio> ;
 .
 <http://data.ehess.fr/individual/cvl2vt49p>
   a vivofr:ORG_0000008 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#UMR8177" ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8177" ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
   vivo:abbreviation "iiac" ;
@@ -119,7 +122,7 @@
   rdfs:label "Interdisciplinary Institute for Contemporary Anthropology"@en-us ;
 .
 <http://data.ehess.fr/individual/cvl2vt49p_fbeuvier_stat>
-  a <http://data.ehess.fr/ontology/vivo-ehess#MBE_0000001> ;
+  a vivoehess:MBE_0000001 ;
   vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
   vivo:relates <http://data.ehess.fr/individual/n6kizqc2u2> ;
   rdfs:label "membre statutaire"@fr-fr ;
@@ -127,7 +130,7 @@
 .
 <http://data.ehess.fr/individual/dse5uxcdf>
   a vivofr:ORG_0000012 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "hceres_iiac#Th2" ;
+  vivoehess:aPourIdentifiantTechnique "hceres_iiac#Th2" ;
   vivo:abbreviation "anthropologie_de_l_institution_de_la_cutlure" ;
   rdfs:label "ANTHROPOLOGIE DE L'INSTITUTION DE LA CUTLURE"@fr-fr ;
 .
@@ -140,34 +143,34 @@
 .
 <http://data.ehess.fr/individual/eb0v8si1v>
   a vivofr:ORG_0000015 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ldap#12300" ;
+  vivoehess:aPourIdentifiantTechnique "ldap#12300" ;
   vivo:abbreviation "dsi" ;
   rdfs:label "Direction des systemes d'information"@fr-fr ;
 .
 <http://data.ehess.fr/individual/esi4zufg8>
   a vivofr:ORG_0000008 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#UMR8558" ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8558" ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
   vivo:abbreviation "crh" ;
   rdfs:label "Centre de recherches historiques"@fr-fr ;
 .
 <http://data.ehess.fr/individual/esi4zufg8_baciocch_stat>
-  a <http://data.ehess.fr/ontology/vivo-ehess#MBE_0000001> ;
+  a vivoehess:MBE_0000001 ;
   vivo:relates <http://data.ehess.fr/individual/esi4zufg8> ;
   vivo:relates <http://data.ehess.fr/individual/n5govuk5l3> ;
   rdfs:label "membre statutaire"@fr-fr ;
   rdfs:label "statutory membership"@en-us ;
 .
 <http://data.ehess.fr/individual/esi4zufg8_cbrando_stat>
-  a <http://data.ehess.fr/ontology/vivo-ehess#MBE_0000001> ;
+  a vivoehess:MBE_0000001 ;
   vivo:relates <http://data.ehess.fr/individual/esi4zufg8> ;
   vivo:relates <http://data.ehess.fr/individual/n11og1hcc8> ;
   rdfs:label "membre statutaire"@fr-fr ;
   rdfs:label "statutory membership"@en-us ;
 .
 <http://data.ehess.fr/individual/esi4zufg8_sar_assoc>
-  a <http://data.ehess.fr/ontology/vivo-ehess#MBE_0000002> ;
+  a vivoehess:MBE_0000002 ;
   vivo:relates <http://data.ehess.fr/individual/esi4zufg8> ;
   vivo:relates <http://data.ehess.fr/individual/n6vd2xs2ei> ;
   rdfs:label "associated membership"@en-us ;
@@ -175,7 +178,7 @@
 .
 <http://data.ehess.fr/individual/evbipd5x4>
   a vivofr:ORG_0000010 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#EHESS" ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#EHESS" ;
   vivo:abbreviation "ehess" ;
   rdfs:label "École des Hautes Études en Sciences Sociales"@fr-fr ;
 .
@@ -210,8 +213,8 @@
 <http://data.ehess.fr/individual/n11og1hcc8>
   a vivofr:PRS_0000002 ;
   a vivo:FacultyMember ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantInterne> "11og1hcc8" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "lodel_crh#5088" ;
+  vivoehess:aPourIdentifiantInterne "11og1hcc8" ;
+  vivoehess:aPourIdentifiantTechnique "lodel_crh#5088" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/n11og1hcc8_686> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "cbrando" ;
   vivo:overview """<h2>
@@ -374,9 +377,9 @@
 <http://data.ehess.fr/individual/n5aezekj7s>
   a vivofr:PRS_0000002 ;
   a vivo:FacultyMember ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantInterne> "5aezekj7s" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ldap#eborrome" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#idref> "08359440X" ;
+  vivoehess:aPourIdentifiantInterne "5aezekj7s" ;
+  vivoehess:aPourIdentifiantTechnique "ldap#eborrome" ;
+  vivoehess:idref "08359440X" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/n5aezekj7s_618> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "eborrome" ;
   vivo:overview "" ;
@@ -397,9 +400,9 @@
 <http://data.ehess.fr/individual/n5govuk5l3>
   a vivofr:PRS_0000002 ;
   a vivo:FacultyMember ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantInterne> "5govuk5l3" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "lodel_cems#3710" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#idref> "076483673" ;
+  vivoehess:aPourIdentifiantInterne "5govuk5l3" ;
+  vivoehess:aPourIdentifiantTechnique "lodel_cems#3710" ;
+  vivoehess:idref "076483673" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/n5govuk5l3_102> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "baciocch" ;
   vivo:overview """<p>
@@ -796,9 +799,9 @@
 <http://data.ehess.fr/individual/n6kizqc2u2>
   a vivofr:PRS_0000002 ;
   a vivo:FacultyMember ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantInterne> "6kizqc2u2" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ldap#fbeuvier" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#idref> "177613165" ;
+  vivoehess:aPourIdentifiantInterne "6kizqc2u2" ;
+  vivoehess:aPourIdentifiantTechnique "ldap#fbeuvier" ;
+  vivoehess:idref "177613165" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/n6kizqc2u2_757> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "fbeuvier" ;
   vivo:overview "" ;
@@ -819,9 +822,9 @@
 <http://data.ehess.fr/individual/n6vd2xs2ei>
   a vivofr:PRS_0000011 ;
   a vivo:FacultyMember ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantInterne> "6vd2xs2ei" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "lodel_cespra#2146" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#idref> "028754034" ;
+  vivoehess:aPourIdentifiantInterne "6vd2xs2ei" ;
+  vivoehess:aPourIdentifiantTechnique "lodel_cespra#2146" ;
+  vivoehess:idref "028754034" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/n6vd2xs2ei_39> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "sar" ;
   vivo:hasResearchArea <http://data.ehess.fr/thes/domehess/shs4_3> ;
@@ -1073,8 +1076,8 @@
 <http://data.ehess.fr/individual/nad6i9kwzo>
   a vivofr:PRS_0000002 ;
   a vivo:FacultyMember ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantInterne> "ad6i9kwzo" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ldap#mgevauda" ;
+  vivoehess:aPourIdentifiantInterne "ad6i9kwzo" ;
+  vivoehess:aPourIdentifiantTechnique "ldap#mgevauda" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/nad6i9kwzo_643> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "mgevauda" ;
   vivo:overview "" ;
@@ -1095,9 +1098,9 @@
 <http://data.ehess.fr/individual/nam3e2rlio>
   a vivofr:PRS_0000011 ;
   a vivo:FacultyMember ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantInterne> "am3e2rlio" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "lodel_ceias#3601" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#idref> "079201687" ;
+  vivoehess:aPourIdentifiantInterne "am3e2rlio" ;
+  vivoehess:aPourIdentifiantTechnique "lodel_ceias#3601" ;
+  vivoehess:idref "079201687" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/nam3e2rlio_346> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "acastain" ;
   vivo:overview """<h3>
@@ -1262,9 +1265,9 @@
 .
 <http://data.ehess.fr/individual/nd658p5uaz>
   a vivofr:PRS_0000010 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantInterne> "d658p5uaz" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ldap#jdornbus" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#idref> "127220747" ;
+  vivoehess:aPourIdentifiantInterne "d658p5uaz" ;
+  vivoehess:aPourIdentifiantTechnique "ldap#jdornbus" ;
+  vivoehess:idref "127220747" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/nd658p5uaz_51> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "jdornbus" ;
   vivo:overview "" ;
@@ -1285,9 +1288,9 @@
 <http://data.ehess.fr/individual/nf3xudu2be>
   a vivofr:PRS_0000009 ;
   a vivo:FacultyMember ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantInterne> "f3xudu2be" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ldap#luca" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#idref> "035810262" ;
+  vivoehess:aPourIdentifiantInterne "f3xudu2be" ;
+  vivoehess:aPourIdentifiantTechnique "ldap#luca" ;
+  vivoehess:idref "035810262" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/nf3xudu2be_774> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "luca" ;
   vivo:overview "" ;
@@ -1306,18 +1309,24 @@
   vcard:email "nathalie.luca@ehess.fr" ;
 .
 <http://data.ehess.fr/individual/s7t0p2frq>
-  a vivofr:ORG_0000008 ;
   a vivoehess:OGE_0000001 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#UMR8032" ;
+  a vivofr:ORG_0000008 ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8032" ;
   vivo:abbreviation "cetobac" ;
   rdfs:label "Centre d'études turques, ottomanes, balkaniques et centre-asiatiques"@fr-fr ;
 .
 <http://data.ehess.fr/individual/s7t0p2frq_eborrome_stat>
-  a <http://data.ehess.fr/ontology/vivo-ehess#MBE_0000001> ;
+  a vivoehess:MBE_0000001 ;
   vivo:relates <http://data.ehess.fr/individual/n5aezekj7s> ;
   vivo:relates <http://data.ehess.fr/individual/s7t0p2frq> ;
   rdfs:label "membre statutaire"@fr-fr ;
   rdfs:label "statutory membership"@en-us ;
+.
+<http://data.ehess.fr/ontology/vivo-ehess/export2>
+  a owl:Ontology ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess> ;
+  owl:imports vivofr: ;
+  owl:imports <http://vivoweb.org/ontology/core> ;
 .
 <http://data.ehess.fr/thes/domehess/shs4_3>
   a skos:Concept ;

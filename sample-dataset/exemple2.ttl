@@ -1,12 +1,13 @@
-# imports: http://xmlns.com/foaf/0.1/
-# imports: http://vivoweb.org/ontology/core
-# imports: http://data.ehess.fr/ontology/vivo-ehess#
+# baseURI: http://data.ehess.fr/ontology/vivo-ehess/exemple2
+# imports: http://data.ehess.fr/ontology/vivo-ehess
 # imports: http://data.ehess.fr/ontology/vivo-fr#
+# imports: http://vivoweb.org/ontology/core
+# imports: http://xmlns.com/foaf/0.1/
 
-
+@prefix : <http://data.ehess.fr/ontology/vivo-ehess/exemple2#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix j.0: <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix geo: <http://aims.fao.org/aos/geopolitical.owl#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -15,14 +16,71 @@
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix vivo: <http://vivoweb.org/ontology/core#> .
-@prefix vivofr: <http://data.ehess.fr/ontology/vivo-fr#> .
 @prefix vivoehess: <http://data.ehess.fr/ontology/vivo-ehess#> .
+@prefix vivofr: <http://data.ehess.fr/ontology/vivo-fr#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://data.ehess.fr/individual/5lr3hjr9h>
+  a vivoehess:OGE_0000001 ;
+  a vivofr:ORG_0000008 ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8216" ;
+  obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
+  obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
+  vivo:abbreviation "cesor" ;
+  rdfs:label "Centre d'études en sciences sociales du religieux"@fr-fr ;
+.
+<http://data.ehess.fr/individual/5lr3hjr9h_cl1>
+  a vivofr:CLS_0000001 ;
+  vivo:relates <http://data.ehess.fr/individual/5lr3hjr9h> ;
+  rdfs:label "Membres statutaires"@fr-fr ;
+  rdfs:label "Statutory members"@en-us ;
+.
+<http://data.ehess.fr/individual/5lr3hjr9h_cl2>
+  a vivofr:CLS_0000001 ;
+  vivo:relates <http://data.ehess.fr/individual/5lr3hjr9h> ;
+  rdfs:label "Associated members"@en-us ;
+  rdfs:label "Membres associés"@fr-fr ;
+.
+<http://data.ehess.fr/individual/5lr3hjr9h_cl3>
+  a vivofr:CLS_0000001 ;
+  vivo:relates <http://data.ehess.fr/individual/5lr3hjr9h> ;
+  rdfs:label "Correspondants"@fr-fr ;
+  rdfs:label "Correspondents"@en-us ;
+.
+<http://data.ehess.fr/individual/5lr3hjr9h_durand_stat>
+  a vivoehess:MBE_0000001 ;
+  vivo:relates <http://data.ehess.fr/individual/3k6jlppwl> ;
+  vivo:relates <http://data.ehess.fr/individual/5lr3hjr9h_cl1> ;
+  vivo:relates <http://data.ehess.fr/individual/nad6i9kwzo> ;
+  rdfs:label "membre statutaire"@fr-fr ;
+  rdfs:label "statutory membership"@en-us ;
+.
+<http://data.ehess.fr/individual/9b7ixpuin>
+  a vivofr:ORG_0000010 ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#CNRS" ;
+  vivo:abbreviation "cnrs" ;
+  rdfs:label "Centre National de la Recherche Scientifique"@fr-fr ;
+.
+<http://data.ehess.fr/individual/9b7ixpuin_durand>
+  a vivofr:FNC_0000011 ;
+  a vivofr:FNC_0000013 ;
+  vivo:relates <http://data.ehess.fr/individual/9b7ixpuin> ;
+  vivo:relates <http://data.ehess.fr/individual/nf3xudu2bf> ;
+  rdfs:label "(full) professor"@en-us ;
+  rdfs:label "directeur.trice d'études cumulant.e"@fr-fr ;
+  rdfs:label "directeur.trice de recherches"@fr-fr ;
+  rdfs:label "research professor"@en-us ;
+.
+<http://data.ehess.fr/individual/evbipd5x4>
+  a vivofr:ORG_0000010 ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#EHESS" ;
+  vivo:abbreviation "ehess" ;
+  rdfs:label "École des Hautes Études en Sciences Sociales"@fr-fr ;
+.
 <http://data.ehess.fr/individual/nf3xudu2bf>
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantInterne> "f3xudu2bf" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ldap#durand" ;
-  <http://data.ehess.fr/ontology/vivo-ehess#idref> "05643267" ;
+  vivoehess:aPourIdentifiantInterne "f3xudu2bf" ;
+  vivoehess:aPourIdentifiantTechnique "ldap#durand" ;
+  vivoehess:idref "05643267" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/nf3xudu2bf_774> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "durand" ;
   vivo:overview "" ;
@@ -40,97 +98,43 @@
   a vcard:Work ;
   vcard:email "nathalie.durand@ehess.fr" ;
 .
-<http://data.ehess.fr/individual/9b7ixpuin_durand>
-    a vivofr:FNC_0000011 ;
-    vivo:relates <http://data.ehess.fr/individual/9b7ixpuin> ;
-    vivo:relates <http://data.ehess.fr/individual/nf3xudu2bf> ;
-    rdfs:label "directeur.trice de recherches"@fr-fr ;
-    rdfs:label "research professor"@en-us ;
+<http://data.ehess.fr/individual/s7t0p2frq>
+  a vivoehess:OGE_0000001 ;
+  a vivofr:ORG_0000008 ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8032" ;
+  vivo:abbreviation "cetobac" ;
+  rdfs:label "Centre d'études turques, ottomanes, balkaniques et centre-asiatiques"@fr-fr ;
 .
-<http://data.ehess.fr/individual/9b7ixpuin_durand>
-    a vivofr:FNC_0000013 ;
-    vivo:relates <http://data.ehess.fr/individual/9b7ixpuin> ;
-    vivo:relates <http://data.ehess.fr/individual/nf3xudu2bf> ;
-    rdfs:label "directeur.trice d'études cumulant.e"@fr-fr ;
-    rdfs:label "(full) professor"@en-us ;
+<http://data.ehess.fr/individual/s7t0p2frq_cl1>
+  a vivofr:CLS_0000001 ;
+  vivo:relates <http://data.ehess.fr/individual/s7t0p2frq> ;
+  rdfs:label "Members"@en-us ;
+  rdfs:label "Membres"@fr-fr ;
 .
-<http://data.ehess.fr/individual/evbipd5x4>
-    a vivofr:ORG_0000010 ;
-    <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#EHESS" ;
-    vivo:abbreviation "ehess" ;
-    rdfs:label "École des Hautes Études en Sciences Sociales"@fr-fr ;
+<http://data.ehess.fr/individual/s7t0p2frq_cl2>
+  a vivofr:CLS_0000001 ;
+  vivo:relates <http://data.ehess.fr/individual/s7t0p2frq> ;
+  rdfs:label "Associated members"@en-us ;
+  rdfs:label "Associés"@fr-fr ;
 .
-<http://data.ehess.fr/individual/9b7ixpuin>
-    a vivofr:ORG_0000010 ;
-    <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#CNRS" ;
-    vivo:abbreviation "cnrs" ;
-    rdfs:label "Centre National de la Recherche Scientifique"@fr-fr ;
-.
-<http://data.ehess.fr/individual/5lr3hjr9h_durand_stat>
-  a <http://data.ehess.fr/ontology/vivo-ehess#MBE_0000001> ;
-  vivo:relates <http://data.ehess.fr/individual/3k6jlppwl> ;
-  vivo:relates <http://data.ehess.fr/individual/nad6i9kwzo> ;
-  vivo:relates <http://data.ehess.fr/individual/5lr3hjr9h_cl1> ;
-  rdfs:label "membre statutaire"@fr-fr ;
-  rdfs:label "statutory membership"@en-us ;
+<http://data.ehess.fr/individual/s7t0p2frq_cl3>
+  a vivofr:CLS_0000001 ;
+  vivo:relates <http://data.ehess.fr/individual/s7t0p2frq> ;
+  rdfs:label "Autres"@fr-fr ;
+  rdfs:label "Others"@en-us ;
 .
 <http://data.ehess.fr/individual/s7t0p2frq_durand_assoc>
-  a <http://data.ehess.fr/ontology/vivo-ehess#MBE_0000002> ;
+  a vivoehess:MBE_0000002 ;
   vivo:relates <http://data.ehess.fr/individual/3k6jlppwl> ;
   vivo:relates <http://data.ehess.fr/individual/nad6i9kwzo> ;
   vivo:relates <http://data.ehess.fr/individual/s7t0p2frq_cl2> ;
   rdfs:label "membre statutaire"@fr-fr ;
   rdfs:label "statutory membership"@en-us ;
 .
-<http://data.ehess.fr/individual/5lr3hjr9h>
-  a vivofr:ORG_0000008 ;
-  a vivoehess:OGE_0000001 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#UMR8216" ;
-  obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
-  obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
-  vivo:abbreviation "cesor" ;
-  rdfs:label "Centre d'études en sciences sociales du religieux"@fr-fr ;
-.
-<http://data.ehess.fr/individual/s7t0p2frq>
-  a vivofr:ORG_0000008 ;
-  a vivoehess:OGE_0000001 ;
-  <http://data.ehess.fr/ontology/vivo-ehess#aPourIdentifiantTechnique> "ddr_units_list#UMR8032" ;
-  vivo:abbreviation "cetobac" ;
-  rdfs:label "Centre d'études turques, ottomanes, balkaniques et centre-asiatiques"@fr-fr ;
-.
-<http://data.ehess.fr/individual/5lr3hjr9h_cl1>
-    a <http://data.ehess.fr/ontology/vivo-fr#CLS_0000001> ;
-    vivo:relates <http://data.ehess.fr/individual/5lr3hjr9h> ;
-    rdfs:label "Membres statutaires"@fr-fr ;
-    rdfs:label "Statutory members"@en-us ;
-.
-<http://data.ehess.fr/individual/5lr3hjr9h_cl2>
-    a <http://data.ehess.fr/ontology/vivo-fr#CLS_0000001> ;
-    vivo:relates <http://data.ehess.fr/individual/5lr3hjr9h> ;
-    rdfs:label "Membres associés"@fr-fr ;
-    rdfs:label "Associated members"@en-us ;
-.
-<http://data.ehess.fr/individual/5lr3hjr9h_cl3>
-    a <http://data.ehess.fr/ontology/vivo-fr#CLS_0000001> ;
-    vivo:relates <http://data.ehess.fr/individual/5lr3hjr9h> ;
-    rdfs:label "Correspondants"@fr-fr ;
-    rdfs:label "Correspondents"@en-us ;
-.
-<http://data.ehess.fr/individual/s7t0p2frq_cl1>
-    a <http://data.ehess.fr/ontology/vivo-fr#CLS_0000001> ;
-    vivo:relates <http://data.ehess.fr/individual/s7t0p2frq> ;
-    rdfs:label "Membres"@fr-fr ;
-    rdfs:label "Members"@en-us ;
-.
-<http://data.ehess.fr/individual/s7t0p2frq_cl2>
-    a <http://data.ehess.fr/ontology/vivo-fr#CLS_0000001> ;
-    vivo:relates <http://data.ehess.fr/individual/s7t0p2frq> ;
-    rdfs:label "Associés"@fr-fr ;
-    rdfs:label "Associated members"@en-us ;
-.
-<http://data.ehess.fr/individual/s7t0p2frq_cl3>
-    a <http://data.ehess.fr/ontology/vivo-fr#CLS_0000001> ;
-    vivo:relates <http://data.ehess.fr/individual/s7t0p2frq> ;
-    rdfs:label "Autres"@fr-fr ;
-    rdfs:label "Others"@en-us ;
+<http://data.ehess.fr/ontology/vivo-ehess/exemple2>
+  a owl:Ontology ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess> ;
+  owl:imports vivofr: ;
+  owl:imports <http://vivoweb.org/ontology/core> ;
+  owl:imports foaf: ;
 .
