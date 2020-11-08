@@ -47,11 +47,11 @@
   rdfs:label "Correspondants"@fr-fr ;
   rdfs:label "Correspondents"@en-us ;
 .
-<http://data.ehess.fr/individual/5lr3hjr9h_durand_stat>
+<http://data.ehess.fr/individual/5lr3hjr9h_nf3xudu2bf_stat>
   a vivoehess:MBE_0000001 ;
-  vivo:relates <http://data.ehess.fr/individual/3k6jlppwl> ;
+  vivo:relates <http://data.ehess.fr/individual/nf3xudu2bf> ;
   vivo:relates <http://data.ehess.fr/individual/5lr3hjr9h_cl1> ;
-  vivo:relates <http://data.ehess.fr/individual/nad6i9kwzo> ;
+  vivo:relates <http://data.ehess.fr/individual/5lr3hjr9h> ;
   rdfs:label "membre statutaire"@fr-fr ;
   rdfs:label "statutory membership"@en-us ;
 .
@@ -61,7 +61,7 @@
   vivo:abbreviation "cnrs" ;
   rdfs:label "Centre National de la Recherche Scientifique"@fr-fr ;
 .
-<http://data.ehess.fr/individual/9b7ixpuin_durand>
+<http://data.ehess.fr/individual/9b7ixpuin_nf3xudu2bf>
   a vivofr:FNC_0000011 ;
   a vivofr:FNC_0000013 ;
   vivo:relates <http://data.ehess.fr/individual/9b7ixpuin> ;
@@ -123,10 +123,10 @@
   rdfs:label "Autres"@fr-fr ;
   rdfs:label "Others"@en-us ;
 .
-<http://data.ehess.fr/individual/s7t0p2frq_durand_assoc>
+<http://data.ehess.fr/individual/s7t0p2frq_nf3xudu2bf_assoc>
   a vivoehess:MBE_0000002 ;
-  vivo:relates <http://data.ehess.fr/individual/3k6jlppwl> ;
-  vivo:relates <http://data.ehess.fr/individual/nad6i9kwzo> ;
+  vivo:relates <http://data.ehess.fr/individual/s7t0p2frq> ;
+  vivo:relates <http://data.ehess.fr/individual/nf3xudu2bf> ;
   vivo:relates <http://data.ehess.fr/individual/s7t0p2frq_cl2> ;
   rdfs:label "membre statutaire"@fr-fr ;
   rdfs:label "statutory membership"@en-us ;
