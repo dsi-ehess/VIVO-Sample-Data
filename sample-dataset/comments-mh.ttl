@@ -35,7 +35,13 @@
   owl:imports <http://data.ehess.fr/ontology/vivo-ehess/export2> ;
   owl:imports <http://spinrdf.org/spl> ;
   owl:imports <http://xmlns.com/foaf/0.1/> ;
+  owl:versionIRI <http://data.ehess.fr/ontology/vivo-ehess/comments-mh#2020-11-07> ;
+  owl:versionInfo "2020-11-07" ;
   owl:versionInfo "Created by Michel Héon" ;
+.
+<http://data.ehess.fr/ontology/vivo-ehess/comments-mh#2020-11-07>
+  a owl:Ontology ;
+  rdfs:label "" ;
 .
 <http://data.ehess.fr/ontology/vivo-fr#FNC_0000001>
   rdfs:comment "MH - Utiliser vivo:Position" ;
