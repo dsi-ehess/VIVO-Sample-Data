@@ -29,7 +29,7 @@
   rdfs:label "Institut interdisciplinaire d'anthropologie du contemporain"@fr-fr ;
   rdfs:label "Interdisciplinary Institute for Contemporary Anthropology"@en-us ;
 .
-<http://data.ehess.fr/individual/cvl2vt49p_adupont_mnpts>
+<http://data.ehess.fr/individual/cvl2vt49p_n6kizqc3u3_mnpts>
   a vivoehess:MMB_0000005 ;
   vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
   vivo:relates <http://data.ehess.fr/individual/n6kizqc3u3> ;
@@ -61,7 +61,7 @@
   vivo:abbreviation "ehess" ;
   rdfs:label "École des Hautes Études en Sciences Sociales"@fr-fr ;
 .
-<http://data.ehess.fr/individual/evbipd5x4_adupont>
+<http://data.ehess.fr/individual/evbipd5x4_n6kizqc3u3>
   a vivofr:FNC_0000007 ;
   vivo:relates <http://data.ehess.fr/individual/evbipd5x4> ;
   vivo:relates <http://data.ehess.fr/individual/n6kizqc3u3> ;
