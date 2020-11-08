@@ -1,0 +1,27 @@
+# baseURI: http://data.ehess.fr/ontology/vivo-ehess/all-exemples
+# imports: http://data.ehess.fr/ontology/vivo-ehess/exemple1
+# imports: http://data.ehess.fr/ontology/vivo-ehess/exemple2
+# imports: http://data.ehess.fr/ontology/vivo-ehess/exemple3
+# imports: http://data.ehess.fr/ontology/vivo-ehess/export2
+# imports: http://www.w3.org/2003/01/geo/wgs84_pos
+
+@prefix : <http://data.ehess.fr/ontology/vivo-ehess/all-exemples#> .
+@prefix exemple: <http://data.ehess.fr/ontology/vivo-ehess/exemple#> .
+@prefix exemple1: <http://data.ehess.fr/ontology/vivo-ehess/exemple1#> .
+@prefix exemple2: <http://data.ehess.fr/ontology/vivo-ehess/exemple2#> .
+@prefix exemple3: <http://data.ehess.fr/ontology/vivo-ehess/exemple3#> .
+@prefix export2: <http://data.ehess.fr/ontology/vivo-ehess/export2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.ehess.fr/ontology/vivo-ehess/all-exemples>
+  a owl:Ontology ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess/exemple1> ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess/exemple2> ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess/exemple3> ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess/export2> ;
+  owl:imports <http://www.w3.org/2003/01/geo/wgs84_pos> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
