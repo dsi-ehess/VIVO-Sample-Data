@@ -33,6 +33,7 @@
   a vivoehess:MMB_0000005 ;
   vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
   vivo:relates <http://data.ehess.fr/individual/n6kizqc3u3> ;
+  vivo:relates <http://data.ehess.fr/individual/cvl2vt49p_cl3> ;
   rdfs:label "FooBar Project support engineer"@en-us ;
   rdfs:label "Ingénieur support au projet FooBar"@fr-fr ;
 .
