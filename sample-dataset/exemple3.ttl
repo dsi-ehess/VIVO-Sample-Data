@@ -47,7 +47,7 @@
   rdfs:label "Collaborateurs"@fr-fr ;
   rdfs:label "Collaborators"@en-us ;
 .
-<http://data.ehess.fr/individual/cvl2vt49p_rlopez_corresp>
+<http://data.ehess.fr/individual/cvl2vt49p_mp4ytut6gy_corresp>
   a vivoehess:MMB_0000003 ;
   vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
   vivo:relates <http://data.ehess.fr/individual/cvl2vt49p_cl2> ;
@@ -82,7 +82,7 @@
   vivo:abbreviation "centro_de_investigaciones_y_estudios_superiores_en_antropologia_social_(ciesas_mexico)" ;
   rdfs:label "Centro de Investigaciones y Estudios Superiores en Antropología Social (CIESAS  México)"@fr-fr ;
 .
-<http://data.ehess.fr/individual/ya59b1zqj_rlopez>
+<http://data.ehess.fr/individual/ya59b1zqj_mp4ytut6gy>
   a vivofr:FNC_0000004 ;
   vivo:relates <http://data.ehess.fr/individual/mp4ytut6gy> ;
   vivo:relates <http://data.ehess.fr/individual/ya59b1zqj> ;
