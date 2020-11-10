@@ -50,7 +50,7 @@
   rdfs:comment "MH - Remplacer cette IRI par vivo:PostdocPosition" ;
 .
 <http://data.ehess.fr/ontology/vivo-fr#ORG_0000002>
-  rdfs:comment "En plus de foaf:Organization, je classerais cette structure aussi sous vivo:ResearchOrganization" ;
+  rdfs:comment "MH - En plus de foaf:Organization, je classerais cette structure aussi sous vivo:ResearchOrganization" ;
 .
 <http://data.ehess.fr/ontology/vivo-fr#ORG_0000003>
   rdfs:comment "En plus de foaf:Organization, je classerais cette structure aussi sous vivo:ResearchOrganization" ;
