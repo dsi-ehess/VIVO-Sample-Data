@@ -37,3 +37,7 @@ core:Postdoc
   obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Chercheur_postdoctoral"@fr-FR ;
   rdfs:label "postdoctorant.e"@fr-FR ;
 .
+core:FacultyMember
+  obo:IAO_0000115 "Une personne chargée de produire et de diffuser des savoirs au sein d'un établissement d'enseignement supérieur."@fr-FR ;
+  rdfs:label "personnel Académique"@fr-FR ;
+.

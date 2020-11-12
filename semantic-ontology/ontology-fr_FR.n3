@@ -599,13 +599,6 @@ vivofr:PRP_0000005
   rdfs:label "identifiant IdRef"@fr-FR ;
   rdfs:subPropertyOf vivo:identifier ;
 .
-vivofr:PRS_0000001
-  a owl:Class ;
-  obo:IAO_0000115 "Une personne chargée de produire et de diffuser des savoirs au sein d'un établissement d'enseignement supérieur."@fr-FR ;
-  rdfs:label "personnel Académique"@fr-FR ;
-  rdfs:subClassOf foaf:Person ;
-  owl:equivalentClass vivo:FacultyMember ;
-.
 vivofr:PRS_0000002
   a owl:Class ;
   obo:IAO_0000115 "Personnels ingénieurs, administratifs, techniques, ouvriers et de service (IATOS)"@fr-FR ;
@@ -695,7 +688,7 @@ vivofr:PRS_0000009
   vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
   rdfs:label "chercheur"@fr-FR ;
   rdfs:label "researcher"@en-US ;
-  rdfs:subClassOf vivofr:PRS_0000001 ;
+  rdfs:subClassOf vivo:FacultyMember ;
 .
 vivofr:PRS_0000010
   a owl:Class ;
@@ -708,7 +701,7 @@ vivofr:PRS_0000010
   vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
   rdfs:label "enseignant"@fr-FR ;
   rdfs:label "teacher"@en-US ;
-  rdfs:subClassOf vivofr:PRS_0000001 ;
+  rdfs:subClassOf vivo:FacultyMember ;
 .
 vivofr:PRS_0000011
   a owl:Class ;
@@ -721,7 +714,7 @@ vivofr:PRS_0000011
   vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
   rdfs:label "enseignant.e-chercheur.e"@fr-FR ;
   rdfs:label "teacher researcher"@en-US ;
-  rdfs:subClassOf vivofr:PRS_0000001 ;
+  rdfs:subClassOf vivo:FacultyMember ;
   rdfs:subClassOf [
       owl:unionOf (
           [
@@ -753,5 +746,5 @@ vivofr:PRS_0000012
   vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
   rdfs:label "enseignant.e-chercheur.e émérite"@fr-FR ;
   rdfs:label "teacher researcher emeritus"@en-US ;
-  rdfs:subClassOf vivofr:PRS_0000001 ;
+  rdfs:subClassOf vivo:FacultyMember ;
 .
