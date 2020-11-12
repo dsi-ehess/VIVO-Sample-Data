@@ -30,3 +30,6 @@ core:Relationship
   obo:IAO_0000115 "Relation réifiée entre deux entités"@fr-FR ;
   rdfs:label "relation"@fr-FR ;
 .
+core:ResearchOrganization
+  rdfs:label "structure de recherche"@fr-FR ;
+.
