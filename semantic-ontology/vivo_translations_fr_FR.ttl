@@ -33,3 +33,7 @@ core:Relationship
 core:ResearchOrganization
   rdfs:label "structure de recherche"@fr-FR ;
 .
+core:Postdoc
+  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Chercheur_postdoctoral"@fr-FR ;
+  rdfs:label "postdoctorant.e"@fr-FR ;
+.

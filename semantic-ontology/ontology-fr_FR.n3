@@ -546,7 +546,7 @@ vivofr:PRP_0000001
 vivofr:PRP_0000002
   a owl:DatatypeProperty ;
   a owl:FunctionalProperty ;
-  obo:IAO_0000115 "Identifiant de l'utilisateur, commun aux différentes applications de la recherche"@fr-FR ;
+  obo:IAO_0000115 "Identifiant interne de l'utilisateur, commun aux différentes applications de la recherche"@fr-FR ;
   vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#editor> ;
   vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#dbAdmin> ;
   vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#dbAdmin> ;
@@ -683,21 +683,6 @@ vivofr:PRS_0000007
   rdfs:label "habilité à diriger des recherches"@fr-FR ;
   rdfs:subClassOf foaf:Person ;
   skos:altLabel "HDR"@fr-FR ;
-.
-vivofr:PRS_0000008
-  a owl:Class ;
-  obo:IAO_0000115 "Une assistante ou un assistant ingénieur"@fr-FR ;
-  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Chercheur_postdoctoral"@fr-FR ;
-  vitro:displayLimitAnnot "-1"^^xsd:int ;
-  vitro:displayRankAnnot "-1"^^xsd:int ;
-  vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
-  vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
-  vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppeople> ;
-  vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
-  rdfs:label "postDoctorant.e"@fr-FR ;
-  rdfs:label "postdoc"@en-US ;
-  rdfs:subClassOf foaf:Person ;
-  owl:equivalentClass vivo:PostDoc ;
 .
 vivofr:PRS_0000009
   a owl:Class ;
