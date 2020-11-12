@@ -74,8 +74,8 @@
   terms:rights "CC BY-SA 4.0" ;
   vann:preferredNamespacePrefix "vivoehess" ;
   vitro:ontologyPrefixAnnot "vivoehess" ;
-  rdfs:label "Vivo FR Ontology"@en-US ;
-  rdfs:label "ontologie Vivo FR"@fr-FR ;
+  rdfs:label "Vivo EHESS Ontology"@en-US ;
+  rdfs:label "ontologie Vivo EHESS"@fr-FR ;
   owl:imports vivofr: ;
   owl:imports <http://vivoweb.org/ontology/core> ;
   owl:versionInfo "Version 1.0 - 2018-04-03" ;
