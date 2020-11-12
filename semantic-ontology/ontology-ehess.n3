@@ -73,7 +73,7 @@
   terms:issued "2020-10-15"^^xsd:date ;
   terms:rights "CC BY-SA 4.0" ;
   vann:preferredNamespacePrefix "vivoehess" ;
-  vitro:ontologyPrefixAnnot "vivofr" ;
+  vitro:ontologyPrefixAnnot "vivoehess" ;
   rdfs:label "Vivo FR Ontology"@en-US ;
   rdfs:label "ontologie Vivo FR"@fr-FR ;
   owl:imports vivofr: ;
