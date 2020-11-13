@@ -434,7 +434,7 @@ vivofr:ORG_0000007
 .
 vivofr:ORG_0000008
   a owl:Class ;
-  obo:IAO_0000115 "Unité de recherche"vivo:ResearchOrganization ;
+  obo:IAO_0000115 "Unité de recherche" ;
   obo:IAO_0000115 "Équivalent d'un laboratoire : https://fr.wikipedia.org/wiki/Laboratoire_de_recherche, Par exemple le CRH (UMR 8558)"@fr-FR ;
   vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
   vitro:hiddenFromPublishBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
