@@ -63,13 +63,17 @@
 .
 <http://data.ehess.fr/individual/9b7ixpuin_nf3xudu2bf>
   a vivofr:FNC_0000011 ;
-  a vivofr:FNC_0000013 ;
   vivo:relates <http://data.ehess.fr/individual/9b7ixpuin> ;
+  vivo:relates <http://data.ehess.fr/individual/nf3xudu2bf> ;
+  rdfs:label "directeur.trice de recherches"@fr-fr ;
+  rdfs:label "research professor"@en-us ;
+.
+<http://data.ehess.fr/individual/evbipd5x4_nf3xudu2bf>
+  a vivofr:FNC_0000013 ;
+  vivo:relates <http://data.ehess.fr/individual/evbipd5x4> ;
   vivo:relates <http://data.ehess.fr/individual/nf3xudu2bf> ;
   rdfs:label "(full) professor"@en-us ;
   rdfs:label "directeur.trice d'études cumulant.e"@fr-fr ;
-  rdfs:label "directeur.trice de recherches"@fr-fr ;
-  rdfs:label "research professor"@en-us ;
 .
 <http://data.ehess.fr/individual/evbipd5x4>
   a vivo:University ;
@@ -128,13 +132,6 @@
   vivo:relates <http://data.ehess.fr/individual/s7t0p2frq> ;
   vivo:relates <http://data.ehess.fr/individual/nf3xudu2bf> ;
   vivo:relates <http://data.ehess.fr/individual/s7t0p2frq_cl2> ;
-  rdfs:label "membre statutaire"@fr-fr ;
-  rdfs:label "statutory membership"@en-us ;
-.
-<http://data.ehess.fr/ontology/vivo-ehess/exemple2>
-  a owl:Ontology ;
-  owl:imports <http://data.ehess.fr/ontology/vivo-ehess> ;
-  owl:imports vivofr: ;
-  owl:imports <http://vivoweb.org/ontology/core> ;
-  owl:imports foaf: ;
+  rdfs:label "membre associé"@fr-fr ;
+  rdfs:label "associated member"@en-us ;
 .
