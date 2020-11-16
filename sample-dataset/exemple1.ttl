@@ -22,7 +22,7 @@
 
 <http://data.ehess.fr/individual/cvl2vt49p>
   a vivofr:ORG_0000008 ;
-  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8177" ;
+  vivofr:PRP_0000003 "ddr_units_list#UMR8177" ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
   vivo:abbreviation "iiac" ;
@@ -30,7 +30,7 @@
   rdfs:label "Interdisciplinary Institute for Contemporary Anthropology"@en-us ;
 .
 <http://data.ehess.fr/individual/cvl2vt49p_n6kizqc3u3_mnpts>
-  a vivoehess:MMB_0000005 ;
+  a vivofr:MMB_0000005 ;
   vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
   vivo:relates <http://data.ehess.fr/individual/n6kizqc3u3> ;
   vivo:relates <http://data.ehess.fr/individual/cvl2vt49p_cl3> ;
@@ -57,7 +57,7 @@
 .
 <http://data.ehess.fr/individual/evbipd5x4>
   a vivo:University ;
-  vivoehess:aPourIdentifiantTechnique "ddr_units_list#EHESS" ;
+  vivofr:PRP_0000003 "ddr_units_list#EHESS" ;
   vivo:abbreviation "ehess" ;
   rdfs:label "École des Hautes Études en Sciences Sociales"@fr-fr ;
 .
@@ -69,9 +69,9 @@
   rdfs:label "Spécialiste Logiciel ABCD"@fr-fr ;
 .
 <http://data.ehess.fr/individual/n6kizqc3u3>
-  vivoehess:aPourIdentifiantInterne "6kizqc3u3" ;
-  vivoehess:aPourIdentifiantTechnique "ldap#adupont" ;
-  vivoehess:idref "177613165" ;
+  vivofr:PRP_0000002 "6kizqc3u3" ;
+  vivofr:PRP_0000003 "ldap#adupont" ;
+  vivofr:PRP_0000005 "177613165" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/n6kizqc3u3_757> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "adupont" ;
   vivo:overview "Exemple de personne dotée d'une autre fonction de support à la recherche à l'EHESS, animateur d'une formation sur un logiciel spécialisé" ;

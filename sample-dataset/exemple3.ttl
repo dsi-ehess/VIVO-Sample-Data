@@ -22,7 +22,7 @@
 
 <http://data.ehess.fr/individual/cvl2vt49p>
   a vivofr:ORG_0000008 ;
-  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8177" ;
+  vivofr:PRP_0000003 "ddr_units_list#UMR8177" ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
   vivo:abbreviation "iiac" ;
@@ -31,13 +31,13 @@
 .
 <http://data.ehess.fr/individual/evbipd5x4>
   a vivo:University ;
-  vivoehess:aPourIdentifiantTechnique "ddr_units_list#EHESS" ;
+  vivofr:PRP_0000003 "ddr_units_list#EHESS" ;
   vivo:abbreviation "ehess" ;
   rdfs:label "École des Hautes Études en Sciences Sociales"@fr-fr ;
 .
 <http://data.ehess.fr/individual/9b7ixpuin>
   a vivo:University ;
-  vivoehess:aPourIdentifiantTechnique "ddr_units_list#CNRS" ;
+  vivofr:PRP_0000003 "ddr_units_list#CNRS" ;
   vivo:abbreviation "cnrs" ;
   rdfs:label "Centre National de la Recherche Scientifique"@fr-fr ;
 .
@@ -68,9 +68,9 @@
   rdfs:label "Foreign correspondent"@en-us ;
 .
 <http://data.ehess.fr/individual/nmp4ytut6gy>
-  vivoehess:aPourIdentifiantInterne "mp4ytut6gy" ;
-  vivoehess:aPourIdentifiantTechnique "lodel_iiac#rlopez" ;
-  vivoehess:idref "012345678" ;
+  vivofr:PRP_0000002 "mp4ytut6gy" ;
+  vivofr:PRP_0000003 "lodel_iiac#rlopez" ;
+  vivofr:PRP_0000005 "012345678" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/nmp4ytut6gy_665> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "ricardo.lopez@gmail.com" ;
   vivo:overview "Un exemple de professeur invité, issu d'une université étrangère" ;
@@ -90,7 +90,7 @@
 .
 <http://data.ehess.fr/individual/ya59b1zqj>
   a vivo:University ;
-  vivoehess:aPourIdentifiantTechnique "lodel_cadis#centro de investigaciones y estudios superiores en antropologia social (ciesas  mexico)" ;
+  vivofr:PRP_0000003 "lodel_cadis#centro de investigaciones y estudios superiores en antropologia social (ciesas  mexico)" ;
   vivo:abbreviation "centro_de_investigaciones_y_estudios_superiores_en_antropologia_social_(ciesas_mexico)" ;
   rdfs:label "Centro de Investigaciones y Estudios Superiores en Antropología Social (CIESAS  México)"@fr-fr ;
 .

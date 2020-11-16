@@ -23,7 +23,7 @@
 <http://data.ehess.fr/individual/5lr3hjr9h>
   a vivoehess:OGE_0000001 ;
   a vivofr:ORG_0000008 ;
-  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8216" ;
+  vivofr:PRP_0000003 "ddr_units_list#UMR8216" ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/9b7ixpuin> ;
   obo:BFO_0000050 <http://data.ehess.fr/individual/evbipd5x4> ;
   vivo:abbreviation "cesor" ;
@@ -57,7 +57,7 @@
 .
 <http://data.ehess.fr/individual/9b7ixpuin>
   a vivo:University ;
-  vivoehess:aPourIdentifiantTechnique "ddr_units_list#CNRS" ;
+  vivofr:PRP_0000003 "ddr_units_list#CNRS" ;
   vivo:abbreviation "cnrs" ;
   rdfs:label "Centre National de la Recherche Scientifique"@fr-fr ;
 .
@@ -77,14 +77,14 @@
 .
 <http://data.ehess.fr/individual/evbipd5x4>
   a vivo:University ;
-  vivoehess:aPourIdentifiantTechnique "ddr_units_list#EHESS" ;
+  vivofr:PRP_0000003 "ddr_units_list#EHESS" ;
   vivo:abbreviation "ehess" ;
   rdfs:label "École des Hautes Études en Sciences Sociales"@fr-fr ;
 .
 <http://data.ehess.fr/individual/nf3xudu2bf>
-  vivoehess:aPourIdentifiantInterne "f3xudu2bf" ;
-  vivoehess:aPourIdentifiantTechnique "ldap#durand" ;
-  vivoehess:idref "05643267" ;
+  vivofr:PRP_0000002 "f3xudu2bf" ;
+  vivofr:PRP_0000003 "ldap#durand" ;
+  vivofr:PRP_0000005 "05643267" ;
   obo:ARG_2000028 <http://data.ehess.fr/individual/nf3xudu2bf_774> ;
   <http://vitro.mannlib.cornell.edu/ns/vitro/authorization#externalAuthId> "durand" ;
   vivo:overview "" ;
@@ -105,7 +105,7 @@
 <http://data.ehess.fr/individual/s7t0p2frq>
   a vivoehess:OGE_0000001 ;
   a vivofr:ORG_0000008 ;
-  vivoehess:aPourIdentifiantTechnique "ddr_units_list#UMR8032" ;
+  vivofr:PRP_0000003 "ddr_units_list#UMR8032" ;
   vivo:abbreviation "cetobac" ;
   rdfs:label "Centre d'études turques, ottomanes, balkaniques et centre-asiatiques"@fr-fr ;
 .
