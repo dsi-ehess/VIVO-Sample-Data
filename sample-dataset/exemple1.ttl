@@ -89,10 +89,3 @@
   a vcard:Work ;
   vcard:email "alain.dupont@formation.fr" ;
 .
-<http://data.ehess.fr/ontology/vivo-ehess/exemple1>
-  a owl:Ontology ;
-  owl:imports <http://data.ehess.fr/ontology/vivo-ehess> ;
-  owl:imports vivofr: ;
-  owl:imports <http://vivoweb.org/ontology/core> ;
-  owl:imports foaf: ;
-.
