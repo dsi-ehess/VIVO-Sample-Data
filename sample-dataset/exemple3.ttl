@@ -29,6 +29,18 @@
   rdfs:label "Institut interdisciplinaire d'anthropologie du contemporain"@fr-fr ;
   rdfs:label "Interdisciplinary Institute for Contemporary Anthropology"@en-us ;
 .
+<http://data.ehess.fr/individual/evbipd5x4>
+  a vivo:University ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#EHESS" ;
+  vivo:abbreviation "ehess" ;
+  rdfs:label "École des Hautes Études en Sciences Sociales"@fr-fr ;
+.
+<http://data.ehess.fr/individual/9b7ixpuin>
+  a vivo:University ;
+  vivoehess:aPourIdentifiantTechnique "ddr_units_list#CNRS" ;
+  vivo:abbreviation "cnrs" ;
+  rdfs:label "Centre National de la Recherche Scientifique"@fr-fr ;
+.
 <http://data.ehess.fr/individual/cvl2vt49p_cl1>
   a vivofr:CLS_0000001 ;
   vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
@@ -48,7 +60,7 @@
   rdfs:label "Collaborators"@en-us ;
 .
 <http://data.ehess.fr/individual/cvl2vt49p_mp4ytut6gy_corresp>
-  a vivoehess:MMB_0000003 ;
+  a vivofr:MMB_0000003 ;
   vivo:relates <http://data.ehess.fr/individual/cvl2vt49p> ;
   vivo:relates <http://data.ehess.fr/individual/cvl2vt49p_cl2> ;
   vivo:relates <http://data.ehess.fr/individual/mp4ytut6gy> ;

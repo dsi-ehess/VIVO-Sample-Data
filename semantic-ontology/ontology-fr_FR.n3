@@ -325,8 +325,8 @@ vivofr:MMB_0000002
 .
 vivofr:MMB_0000003
   a owl:Class ;
-  obo:IAO_0000115 "Appartenance permanente à une structure (typiquement une unité de recherche) à titre principal"@fr-FR ;
-  obo:IAO_0000115 "Permanent main membership (typically, to a research structure)"@en-US ;
+  obo:IAO_0000115 "Appartenance permanente à une structure (typiquement une unité de recherche) à titre secondaire"@fr-FR ;
+  obo:IAO_0000115 "Permanent accessory membership (typically, to a research structure)"@en-US ;
   vitro:displayLimitAnnot "-1"^^xsd:int ;
   vitro:displayRankAnnot "-1"^^xsd:int ;
   vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
