@@ -61,9 +61,6 @@
 <http://data.ehess.fr/ontology/vivo-fr#ORG_0000008>
   rdfs:comment "MH - Ici c'est opportun de créer cette classe puisqu'il n'y a pas d'équivalent dans vivo" ;
 .
-<http://data.ehess.fr/ontology/vivo-fr#ORG_0000010>
-  rdfs:comment "MH ici aussi, pourquoi créer 'université' alors que vivo:University existe. Si l'on souhaite faire une discinction des Universités françaises, il faudrait que cette resource soit une sublcassOf de vivo:University et non une equivalenceClass. " ;
-.
 <http://data.ehess.fr/ontology/vivo-fr#PRS_0000001>
   rdfs:comment "MH Remplace par vivo:FacultyMember et supprimer l'equivalentClass" ;
 .

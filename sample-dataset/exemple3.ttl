@@ -77,7 +77,7 @@
   vcard:email "ricardo.lopez@gmail.com" ;
 .
 <http://data.ehess.fr/individual/ya59b1zqj>
-  a vivofr:ORG_0000010 ;
+  a vivo:University ;
   vivoehess:aPourIdentifiantTechnique "lodel_cadis#centro de investigaciones y estudios superiores en antropologia social (ciesas  mexico)" ;
   vivo:abbreviation "centro_de_investigaciones_y_estudios_superiores_en_antropologia_social_(ciesas_mexico)" ;
   rdfs:label "Centro de Investigaciones y Estudios Superiores en Antropología Social (CIESAS  México)"@fr-fr ;

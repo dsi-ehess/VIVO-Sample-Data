@@ -56,7 +56,7 @@
   rdfs:label "Collaborators"@en-us ;
 .
 <http://data.ehess.fr/individual/evbipd5x4>
-  a vivofr:ORG_0000010 ;
+  a vivo:University ;
   vivoehess:aPourIdentifiantTechnique "ddr_units_list#EHESS" ;
   vivo:abbreviation "ehess" ;
   rdfs:label "École des Hautes Études en Sciences Sociales"@fr-fr ;

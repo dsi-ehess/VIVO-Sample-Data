@@ -458,14 +458,6 @@ vivofr:ORG_0000009
   rdfs:subClassOf vivofr:ORG_0000003 ;
   rdfs:subClassOf vivofr:ORG_0000006 ;
 .
-vivofr:ORG_0000010
-  a owl:Class ;
-  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Universit%C3%A9"@fr-FR ;
-  rdfs:label "university"@en-US ;
-  rdfs:label "université"@fr-FR ;
-  rdfs:subClassOf foaf:Organization ;
-  owl:equivalentClass vivo:University ;
-.
 vivofr:ORG_0000011
   a owl:Class ;
   obo:IAO_0000115 "In french, Structure fédérative de recherche" ;

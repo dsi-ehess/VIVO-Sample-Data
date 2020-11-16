@@ -41,3 +41,7 @@ core:FacultyMember
   obo:IAO_0000115 "Une personne chargée de produire et de diffuser des savoirs au sein d'un établissement d'enseignement supérieur."@fr-FR ;
   rdfs:label "personnel Académique"@fr-FR ;
 .
+core:University
+  obo:IAO_0000115 "https://fr.wikipedia.org/wiki/Universit%C3%A9"@fr-FR ;
+  rdfs:label "université"@fr-FR ;
+.
