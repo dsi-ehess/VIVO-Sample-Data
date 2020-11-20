@@ -68,6 +68,7 @@
   rdfs:label "Foreign correspondent"@en-us ;
 .
 <http://data.ehess.fr/individual/nmp4ytut6gy>
+  a foaf:Person ;
   vivofr:PRP_0000002 "mp4ytut6gy" ;
   vivofr:PRP_0000003 "lodel_iiac#rlopez" ;
   vivofr:PRP_0000005 "012345678" ;

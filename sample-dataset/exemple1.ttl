@@ -69,6 +69,7 @@
   rdfs:label "Spécialiste Logiciel ABCD"@fr-fr ;
 .
 <http://data.ehess.fr/individual/n6kizqc3u3>
+  a foaf:Person ;
   vivofr:PRP_0000002 "6kizqc3u3" ;
   vivofr:PRP_0000003 "ldap#adupont" ;
   vivofr:PRP_0000005 "177613165" ;

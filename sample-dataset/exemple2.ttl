@@ -82,6 +82,7 @@
   rdfs:label "École des Hautes Études en Sciences Sociales"@fr-fr ;
 .
 <http://data.ehess.fr/individual/nf3xudu2bf>
+  a foaf:Person ;
   vivofr:PRP_0000002 "f3xudu2bf" ;
   vivofr:PRP_0000003 "ldap#durand" ;
   vivofr:PRP_0000005 "05643267" ;
