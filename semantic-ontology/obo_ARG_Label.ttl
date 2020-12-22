@@ -1,0 +1,1210 @@
+# baseURI: http://purl.obolibrary.org/obo/arg/label
+
+@base          <http://purl.obolibrary.org/obo/arg/label> .
+@prefix :      <http://purl.obolibrary.org/obo/arg#> .
+@prefix skostemplate: <http://topbraid.org/spin/skostemplates#> .
+@prefix tagger: <http://evn.topbraidlive.org/tagger#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix teamworkupdate: <http://teamworkAPI.topbraid.com/teamworkUpdate#> .
+@prefix ontologyprojects: <http://teamwork.topbraidlive.org/ontologyprojects#> .
+@prefix tops:  <http://www.topbraid.org/tops#> .
+@prefix corpus: <http://topbraid.org/corpus#> .
+@prefix swaclasses: <http://topbraid.org/swaclasses#> .
+@prefix crosswalkapp: <http://topbraid.org/swa/crosswalkapp#> .
+@prefix spif:  <http://spinrdf.org/spif#> .
+@prefix safconfig: <http://topbraid.org/safconfig/> .
+@prefix tables: <http://topbraid.org/tables#> .
+@prefix crosswalkprojects: <http://teamwork.topbraidlive.org/crosswalkprojects#> .
+@prefix ui:    <http://uispin.org/ui#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix sm2wsdl: <http://topbraid.org/sparqlmotion/sm2wsdl.sms#> .
+@prefix html:  <http://uispin.org/html#> .
+@prefix spinmapl: <http://topbraid.org/spin/spinmapl#> .
+@prefix tasks: <http://topbraid.org/tasks#> .
+@prefix safm:  <http://saf.topbraidlive.org/metaschema/> .
+@prefix skosspin: <http://topbraid.org/spin/skosspin#> .
+@prefix tbladmin: <http://server.topbraidlive.org/system-applications/tbladmin#> .
+@prefix spl:   <http://spinrdf.org/spl#> .
+@prefix jfn:   <java:org.apache.jena.sparql.function.library.> .
+@prefix spr:   <http://spinrdf.org/spr#> .
+@prefix taxonomies: <http://evn.topbraidlive.org/evnprojects#> .
+@prefix fn:    <http://www.w3.org/2005/xpath-functions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix sharepoint: <http://topbraid.org/sharepoint#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix smf:   <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix evnconstraints: <http://topbraid.org/spin/evnconstraints#> .
+@prefix swauml: <http://topbraid.org/swauml#> .
+@prefix tablesmap: <http://topbraid.org/spin/tablesmap#> .
+@prefix search: <http://topbraid.org/search#> .
+@prefix crosswalk: <http://topbraid.org/crosswalk#> .
+@prefix sml:   <http://topbraid.org/sparqlmotionlib#> .
+@prefix savedQueries: <http://teamwork.topbraidlive.org/ui/savedQueries#> .
+@prefix tracker: <http://teamwork.topbraidlive.org/ui/tracker#> .
+@prefix sm:    <http://topbraid.org/sparqlmotion#> .
+@prefix spinmap: <http://spinrdf.org/spinmap#> .
+@prefix sp:    <http://spinrdf.org/sp#> .
+@prefix uix:   <http://topbraidlive.org/uix#> .
+@prefix afn:   <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix crosswalk.spin: <http://topbraid.org/crosswalk.spin#> .
+@prefix tosh.ui: <http://topbraid.org/tosh.ui#> .
+@prefix swon:  <http://uispin.org/swon#> .
+@prefix teamwork: <http://topbraid.org/teamwork#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix pf:    <http://jena.hpl.hp.com/ARQ/property#> .
+@prefix textindex: <http://topbraid.org/textindex#> .
+@prefix evnui: <http://evn.topbraidlive.org/ui#> .
+@prefix spin:  <http://spinrdf.org/spin#> .
+@prefix spra:  <http://spinrdf.org/spra#> .
+@prefix swa:   <http://topbraid.org/swa#> .
+@prefix governance: <http://topbraid.org/teamworkgovernance.ui#> .
+
+<http://purl.obolibrary.org/obo/ARG_2000330>
+        rdfs:label  "plastic and reconstructive surgery (surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000245>
+        rdfs:label  "female pelvic medicine and reconstructive surgery (urology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000300>
+        rdfs:label  "otolaryngology/facial plastic surgery (otolaryngology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000215>
+        rdfs:label  "plastic surgery within the head and neck (plastic surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000191>
+        rdfs:label  "hospice and palliative medicine (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000013>
+        rdfs:label  "project management"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000372>
+        rdfs:label  "legal qualifier" .
+
+<http://purl.obolibrary.org/obo/ARG_2000287>
+        rdfs:label  "occupational therapist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000161>
+        rdfs:label  "rheumatology (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000076>
+        rdfs:label  "american board of ophthalmology"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000342>
+        rdfs:label  "allopathic & osteopathic physicians"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000257>
+        rdfs:label  "oral and maxillofacial surgery (dentist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000131>
+        rdfs:label  "pain medicine (anesthesiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000046>
+        rdfs:label  "content about slideshow"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000312>
+        rdfs:label  "psychologist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000227>
+        rdfs:label  "hospice and palliative medicine (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000101>
+        rdfs:label  "clinical genetics (md) (medical genetics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000299>
+        rdfs:label  "facial plastic surgery (otolaryngology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000173>
+        rdfs:label  "neurotology (otolaryngology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000088>
+        rdfs:label  "american board of thoracic surgery"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000354>
+        rdfs:label  "residential treatment facilities"@en .
+
+<http://purl.obolibrary.obo/obo/ARG_0001002>
+        rdfs:label  "collaboration"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000269>
+        rdfs:label  "hospitalist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000143>
+        rdfs:label  "adolescent medicine (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000058>
+        rdfs:label  "content about bioinformatics analysis"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000324>
+        rdfs:label  "clinical (social worker)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000239>
+        rdfs:label  "complex general surgical oncology (surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000113>
+        rdfs:label  "physical medicine and rehabilitation (physical medicine and rehabilitation)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000028>
+        rdfs:label  "has_contact_info"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000209>
+        rdfs:label  "hospice and palliative medicine (physical medicin)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000270>
+        rdfs:label  "hepatology (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000185>
+        rdfs:label  "pathology - medical microbiology (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000007>
+        rdfs:label  "communication material"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000366>
+        rdfs:label  "sports medicine( family medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000240>
+        rdfs:label  "hospice and palliative medicine (surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000155>
+        rdfs:label  "hematology (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000336>
+        rdfs:label  "emergency medical service providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000210>
+        rdfs:label  "neuromuscular medicine (physical medicin)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000125>
+        rdfs:label  "surgery (surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000306>
+        rdfs:label  "physical therapy assistant"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000282>
+        rdfs:label  "psych/mental health (nurse practitioner)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000197>
+        rdfs:label  "pediatric emergency medicine (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000071>
+        rdfs:label  "american board of internal medicine"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000252>
+        rdfs:label  "audiologist-hearing aid fitter"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000167>
+        rdfs:label  "gynecologic oncology (obstetrics and gynecology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000041>
+        rdfs:label  "content about communication material"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000442>
+        rdfs:label  "cpt billing code"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000348>
+        rdfs:label  "ambulatory health care facilities"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000222>
+        rdfs:label  "child and adolescent psychiatry (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000137>
+        rdfs:label  "hospice and palliative medicine (emergency medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000011>
+        rdfs:label  "expertise measurement process"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000318>
+        rdfs:label  "wound care (registered nurse)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000201>
+        rdfs:label  "health care provider supervising role"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000294>
+        rdfs:label  "oral and maxillofacial surgery"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000107>
+        rdfs:label  "orthopaedic surgery (orthopaedic surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000083>
+        rdfs:label  "american board of plastic surgery"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000264>
+        rdfs:label  "nutrition, renal (dietitian, registered)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000179>
+        rdfs:label  "cytopathology (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000053>
+        rdfs:label  "content about video"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000234>
+        rdfs:label  "hospice and palliative medicine (radiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000149>
+        rdfs:label  "advanced heart failure and transplant cardiology (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000391>
+        rdfs:label  "has_context"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000204>
+        rdfs:label  "pediatric rheumatology (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000119>
+        rdfs:label  "neurology (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000180>
+        rdfs:label  "dermatopathology (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000002>
+        rdfs:label  "survey"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0001003>
+        rdfs:label  "best practices"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000095>
+        rdfs:label  "dermatology (dermatology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000361>
+        rdfs:label  "adolescent medicine (family medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000276>
+        rdfs:label  "adult health (nurse practitioner)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000150>
+        rdfs:label  "cardiovascular disease (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000065>
+        rdfs:label  "american board of allergy and immunology"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000331>
+        rdfs:label  "transplant surgery"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000246>
+        rdfs:label  "pediatric urology (urology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000120>
+        rdfs:label  "neurology with special qualification in child neurology (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000301>
+        rdfs:label  "pain medicine (pain medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000216>
+        rdfs:label  "surgery of the hand (plastic surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000192>
+        rdfs:label  "medical toxicology (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000373>
+        rdfs:label  "official qualifier" .
+
+<http://purl.obolibrary.org/obo/ARG_2000288>
+        rdfs:label  "pediatrics (occupational therapist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000162>
+        rdfs:label  "transplant hepatology (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000077>
+        rdfs:label  "american board of orthopaedic surgery"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000343>
+        rdfs:label  "podiatric medicine & surgery service providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000258>
+        rdfs:label  "pediatric dentistry  (dentist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000132>
+        rdfs:label  "pediatric anesthesiology (anesthesiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000047>
+        rdfs:label  "content about product assessment"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000313>
+        rdfs:label  "clinical child & adolescent (psychologist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000228>
+        rdfs:label  "neurodevelopmental disabilities (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000102>
+        rdfs:label  "clinical molecular genetics (medical genetics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000174>
+        rdfs:label  "pediatric otolaryngology (otolaryngology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000089>
+        rdfs:label  "american board of urology"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000355>
+        rdfs:label  "suppliers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000144>
+        rdfs:label  "geriatric medicine (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000059>
+        rdfs:label  "content about crowdsourcing"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000325>
+        rdfs:label  "specialist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000114>
+        rdfs:label  "plastic surgery (plastic surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000123>
+        rdfs:label  "icd-9 billing code"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000029>
+        rdfs:label  "contact_info_for"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000397>
+        rdfs:label  "url_link_for"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000271>
+        rdfs:label  "hematology and oncology (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000186>
+        rdfs:label  "pathology - molecular genetic (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000008>
+        rdfs:label  "resource"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000060>
+        rdfs:label  "content about grant management"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000367>
+        rdfs:label  "board general specialty"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000241>
+        rdfs:label  "pediatric surgery (surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000156>
+        rdfs:label  "infectious disease (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000337>
+        rdfs:label  "eye and vision services providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000211>
+        rdfs:label  "pain medicine (physical medicin)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000126>
+        rdfs:label  "vascular surgery (surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000307>
+        rdfs:label  "physician assistant"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000283>
+        rdfs:label  "primary care (nurse practitioner)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000198>
+        rdfs:label  "pediatric endocrinology (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000072>
+        rdfs:label  "american board of medical genetics"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000379>
+        rdfs:label  "contact"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000253>
+        rdfs:label  "clinical neuropsychologist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000168>
+        rdfs:label  "hospice and palliative medicine (obstetrics and gynecology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000042>
+        rdfs:label  "content about glossary"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000051>
+        rdfs:label  "patient"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000349>
+        rdfs:label  "hospital units"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000223>
+        rdfs:label  "clinical neurophysiology (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000012>
+        rdfs:label  "measurement_label"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000319>
+        rdfs:label  "diabetes educator (registered nurse)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000295>
+        rdfs:label  "pediatric orthopaedic surgery (orthopaedic surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000108>
+        rdfs:label  "otolaryngology (otolaryngology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000084>
+        rdfs:label  "american board of preventive medicine"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000350>
+        rdfs:label  "hospitals"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000265>
+        rdfs:label  "sports medicine (family medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000054>
+        rdfs:label  "content about webpage"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000320>
+        rdfs:label  "women's health care, ambulatory (registered nurse)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000235>
+        rdfs:label  "neuroradiology (radiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000033>
+        rdfs:label  "has_code" .
+
+<http://purl.obolibrary.org/obo/ARG_2000205>
+        rdfs:label  "pediatric transplant hepatology (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000003>
+        rdfs:label  "job description"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000181>
+        rdfs:label  "neuropathology (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0001004>
+        rdfs:label  "glossary"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000096>
+        rdfs:label  "emergency medicine (emergency medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000362>
+        rdfs:label  "maternal newborn (registered nurse)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000277>
+        rdfs:label  "family (nurse practitioner)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000151>
+        rdfs:label  "clinical cardiac electrophysiology (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000066>
+        rdfs:label  "american board of anesthesiology"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000332>
+        rdfs:label  "behavioral health & social service providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000121>
+        rdfs:label  "diagnostic radiology (radiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000130>
+        rdfs:label  "health care provider"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000302>
+        rdfs:label  "interventional pain medicine  (pain medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000217>
+        rdfs:label  "clinical informatics (preventive medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000193>
+        rdfs:label  "neonatal-perinatal medicine (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000015>
+        rdfs:label  "user_defined_tag"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000374>
+        rdfs:label  "personal qualifier" .
+
+<http://purl.obolibrary.org/obo/ARG_2000289>
+        rdfs:label  "hand (occupational therapist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000163>
+        rdfs:label  "medical biochemical genetics (medical genetics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000172>
+        rdfs:label  "patient_id"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000078>
+        rdfs:label  "american board of otolaryngology"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000344>
+        rdfs:label  "respiratory, developmental, rehabilitative and restorative service providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000259>
+        rdfs:label  "orthodontics and dentofacial orthopedics (dentist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000133>
+        rdfs:label  "sleep medicine (anesthesiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000048>
+        rdfs:label  "content about progress report"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000314>
+        rdfs:label  "clinical (psychologist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000229>
+        rdfs:label  "neuromuscular medicine (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000290>
+        rdfs:label  "occupational therapy assistant"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000103>
+        rdfs:label  "neurological surgery (neurological surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000260>
+        rdfs:label  "mohs-micrographic surgery (dermatology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000175>
+        rdfs:label  "plastic surgery within the head and neck (otolaryngology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000356>
+        rdfs:label  "transportation services"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000230>
+        rdfs:label  "pain medicine (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000145>
+        rdfs:label  "hospice and palliative medicine (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000326>
+        rdfs:label  "speech-language pathologist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000200>
+        rdfs:label  "pediatric hematology-oncology (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000115>
+        rdfs:label  "aerospace medicine (preventive medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000091>
+        rdfs:label  "board subspecialty"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000398>
+        rdfs:label  "has_url_link"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000272>
+        rdfs:label  "massage therapist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000187>
+        rdfs:label  "pathology - pediatric (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000009>
+        rdfs:label  "ctsa key function committee"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000061>
+        rdfs:label  "content about project management"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000242>
+        rdfs:label  "surgery of the hand (surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000157>
+        rdfs:label  "interventional cardiology (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000338>
+        rdfs:label  "nursing service providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000212>
+        rdfs:label  "pediatric rehabilitation medicine (physical medicin)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000127>
+        rdfs:label  "thoracic and cardiac surgery (thoracic surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000010>
+        rdfs:label  "ctsa informatics key function committee"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000308>
+        rdfs:label  "medical (physician assistant)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000284>
+        rdfs:label  "nurse practitioner"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000199>
+        rdfs:label  "pediatric gastroenterology (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000073>
+        rdfs:label  "american board of neurological surgery"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000254>
+        rdfs:label  "clinical nurse specialist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000169>
+        rdfs:label  "maternal and fetal medicine (obstetrics and gynecology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000043>
+        rdfs:label  "content about guidline"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000052>
+        rdfs:label  "prescription"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000224>
+        rdfs:label  "epilepsy (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000139>
+        rdfs:label  "medical toxicology (emergency medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000296>
+        rdfs:label  "adult reconstructive orthopaedic surgery (orthopaedic surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000109>
+        rdfs:label  "pathology-anatomic/pathology-clinical (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000170>
+        rdfs:label  "reproductive endocrinology/infertility (obstetrics and gynecology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000085>
+        rdfs:label  "american board of psychiatry and neurology"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000351>
+        rdfs:label  "laboratories"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000266>
+        rdfs:label  "hospice and palliative medicine (family medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000140>
+        rdfs:label  "pediatric emergency medicine (emergency medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000055>
+        rdfs:label  "content about interview"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000321>
+        rdfs:label  "obstetric, high-risk (registered nurse)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000236>
+        rdfs:label  "nuclear radiology (radiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000110>
+        rdfs:label  "pathology - anatomic (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000206>
+        rdfs:label  "sleep medicine (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000182>
+        rdfs:label  "pathology - chemical (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000004>
+        rdfs:label  "progress report"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0001005>
+        rdfs:label  "guidelines"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000097>
+        rdfs:label  "family medicine (family medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000363>
+        rdfs:label  "geriatric medicine (family medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000278>
+        rdfs:label  "gerontology (nurse practitioner)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000152>
+        rdfs:label  "critical care medicine (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000067>
+        rdfs:label  "american board of colon and rectal surgery"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000333>
+        rdfs:label  "chiropractic providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000248>
+        rdfs:label  "acupuncturist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000122>
+        rdfs:label  "interventional radiology and diagnostic radiology (radiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000037>
+        rdfs:label  "sharecenter content type"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000303>
+        rdfs:label  "pharmacotherapy (pharmacist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000218>
+        rdfs:label  "medical toxicology (preventive medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000016>
+        rdfs:label  "order"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000194>
+        rdfs:label  "neurodevelopmental disabilities (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000375>
+        rdfs:label  "work qualifier" .
+
+<http://purl.obolibrary.org/obo/ARG_2000164>
+        rdfs:label  "molecular genetic pathology (medical genetics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000079>
+        rdfs:label  "american board of pathology"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000345>
+        rdfs:label  "speech, language and hearing service providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000134>
+        rdfs:label  "dermatopathology (dermatology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000049>
+        rdfs:label  "content about protocol"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000400>
+        rdfs:label  "count per year"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000315>
+        rdfs:label  "counseling (psychologist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000291>
+        rdfs:label  "optometrist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000104>
+        rdfs:label  "nuclear medicine (nuclear medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000080>
+        rdfs:label  "american board of pediatrics"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000261>
+        rdfs:label  "dietitian, registered"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000176>
+        rdfs:label  "sleep medicine (otolaryngology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000050>
+        rdfs:label  "content about survey"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000357>
+        rdfs:label  "physician assistants & advanced practice nursing providers"@en .
+
+<http://purl.obolibrary.obo/obo/ARG_0000004>
+        rdfs:label  "crowdsourcing"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000231>
+        rdfs:label  "psychosomatic medicine (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000146>
+        rdfs:label  "sleep medicine (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000327>
+        rdfs:label  "student in an organized health care education/training program"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000201>
+        rdfs:label  "pediatric infectious diseases (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000116>
+        rdfs:label  "occupational medicine (preventive medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000092>
+        rdfs:label  "allergy and immunology (allergy and immunology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000399>
+        rdfs:label  "has contact agent" .
+
+<http://purl.obolibrary.org/obo/ARG_2000273>
+        rdfs:label  "midwife"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000188>
+        rdfs:label  "adolescent medicine (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000197>
+        rdfs:label  "health care provider id"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000062>
+        rdfs:label  "content about social network analysis"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000369>
+        rdfs:label  "primary qualifier" .
+
+<http://purl.obolibrary.org/obo/ARG_2000243>
+        rdfs:label  "surgical critical care (surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000158>
+        rdfs:label  "medical oncology (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000339>
+        rdfs:label  "other service providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000213>
+        rdfs:label  "spinal cord injury medicine (physical medicin)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000128>
+        rdfs:label  "urology (urology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000011>
+        rdfs:label  "relevant_for"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000309>
+        rdfs:label  "surgical (physician assistant)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000370>
+        rdfs:label  "preferred qualifier" .
+
+<http://purl.obolibrary.org/obo/ARG_2000285>
+        rdfs:label  "gynecology (obstetrics and gynecology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000074>
+        rdfs:label  "american board of nuclear medicine"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000340>
+        rdfs:label  "pharmacy service providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000255>
+        rdfs:label  "mental health (counselor)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000044>
+        rdfs:label  "content about job description"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000310>
+        rdfs:label  "podiatrist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000225>
+        rdfs:label  "forensic psychiatry (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000297>
+        rdfs:label  "orthopaedic trauma (orthopaedic surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000171>
+        rdfs:label  "orthopaedic sports medicine (orthopedic surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000086>
+        rdfs:label  "american board of radiology"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000352>
+        rdfs:label  "managed care organizations"@en .
+
+<http://purl.obolibrary.obo/obo/ARG_0001000>
+        rdfs:label  "social network analysis"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000267>
+        rdfs:label  "general practice"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000141>
+        rdfs:label  "sports medicine (emergency medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000056>
+        rdfs:label  "content about technique"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000322>
+        rdfs:label  "obstetric, inpatient (registered nurse)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000237>
+        rdfs:label  "pediatric radiology (radiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000111>
+        rdfs:label  "pathology - clinical (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000207>
+        rdfs:label  "sports medicine (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000183>
+        rdfs:label  "pathology - forensic (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000005>
+        rdfs:label  "training document"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0001006>
+        rdfs:label  "grant management"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000098>
+        rdfs:label  "internal medicine (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000364>
+        rdfs:label  "hospice and palliative medicine sleep medicine (family medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000279>
+        rdfs:label  "pediatrics (nurse practitioner)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000153>
+        rdfs:label  "endocrinology, diabetes and metabolism (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000068>
+        rdfs:label  "american board of dermatology"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000334>
+        rdfs:label  "dental providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000249>
+        rdfs:label  "advanced practice midwife"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000123>
+        rdfs:label  "radiation oncology (radiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000038>
+        rdfs:label  "content about collaboration"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000304>
+        rdfs:label  "physical therapist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000219>
+        rdfs:label  "undersea and hyperbaric medicine (preventive medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000280>
+        rdfs:label  "women's health (nurse practitioner)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000195>
+        rdfs:label  "pediatric cardiology (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000008>
+        rdfs:label  "topic weight measurement"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000376>
+        rdfs:label  "contact qualifier"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000250>
+        rdfs:label  "air transport (ambulance)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000165>
+        rdfs:label  "critical care medicine (obstetrics and gynecology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000346>
+        rdfs:label  "technologists, technicians & other technical service providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000220>
+        rdfs:label  "addiction psychiatry (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000135>
+        rdfs:label  "pediatric dermatology (dermatology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000316>
+        rdfs:label  "cognitive & behavioral (psychologist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000292>
+        rdfs:label  "corneal and contact management (optometrist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000105>
+        rdfs:label  "obstetrics and gynecology (obstetrics and gynecology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000081>
+        rdfs:label  "american board of physical medicine and rehabilitation"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000262>
+        rdfs:label  "nutrition, metabolic (dietitian, registered)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000177>
+        rdfs:label  "blood banking/transfusion medicine (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000051>
+        rdfs:label  "content about template"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000358>
+        rdfs:label  "nursing service related providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000232>
+        rdfs:label  "sleep medicine (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000147>
+        rdfs:label  "sports medicine (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000021>
+        rdfs:label  "experience"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000202>
+        rdfs:label  "pediatric nephrology (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000117>
+        rdfs:label  "public health and general preventive medicine (preventive medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000093>
+        rdfs:label  "anesthesiology (anesthesiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000274>
+        rdfs:label  "naturopath"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000189>
+        rdfs:label  "child abuse pediatrics (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000063>
+        rdfs:label  "content about software"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000244>
+        rdfs:label  "congenital cardiac surgery (thoracic surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000159>
+        rdfs:label  "nephrology (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000214>
+        rdfs:label  "sports medicine (physical medicin)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000129>
+        rdfs:label  "critical care medicine (anesthesiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000012>
+        rdfs:label  "product assessment"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000190>
+        rdfs:label  "developmental-behavioral pediatrics (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000371>
+        rdfs:label  "author qualifier" .
+
+<http://purl.obolibrary.org/obo/ARG_2000286>
+        rdfs:label  "obstetrics (obstetrics and gynecology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000160>
+        rdfs:label  "pulmonary disease (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000075>
+        rdfs:label  "american board of obstetrics and gynecology"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000341>
+        rdfs:label  "group specialty"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000256>
+        rdfs:label  "addiction (substance use disorder) (counselor)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000130>
+        rdfs:label  "hospice and palliative medicine (anesthesiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000045>
+        rdfs:label  "content about academic article"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000311>
+        rdfs:label  "foot surgery (podiatrist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000226>
+        rdfs:label  "geriatric psychiatry (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000100>
+        rdfs:label  "clinical cytogenetics (medical genetics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000298>
+        rdfs:label  "foot and ankle surgery (orthopaedic surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000172>
+        rdfs:label  "surgery of the hand (orthopedics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000087>
+        rdfs:label  "american board of surgery"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000353>
+        rdfs:label  "nursing & custodial care facilities"@en .
+
+<http://purl.obolibrary.obo/obo/ARG_0001001>
+        rdfs:label  "template"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000268>
+        rdfs:label  "genetic counselor, ms"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000142>
+        rdfs:label  "undersea and hyperbaric medicine (emergency medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000057>
+        rdfs:label  "content about best practice"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000323>
+        rdfs:label  "registered nurse"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000238>
+        rdfs:label  "vascular and interventional radiology (radiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000112>
+        rdfs:label  "pediatrics (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000208>
+        rdfs:label  "brain injury medicine (physical medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000006>
+        rdfs:label  "training opportunity"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000184>
+        rdfs:label  "pathology - hematology (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000365>
+        rdfs:label  "sleep medicine (family medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000154>
+        rdfs:label  "gastroenterology (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000069>
+        rdfs:label  "american board of emergency medicine"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000335>
+        rdfs:label  "dietary & nutritional service providers"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000124>
+        rdfs:label  "medical physics (radiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000039>
+        rdfs:label  "content about document"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000305>
+        rdfs:label  "pediatrics (physical therapist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000281>
+        rdfs:label  "obstetrics and gynecology (nurse practitioner)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000196>
+        rdfs:label  "pediatric critical care medicine (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000009>
+        rdfs:label  "expertise measurement"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000070>
+        rdfs:label  "american board of family medicine"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000377>
+        rdfs:label  "foaf profile"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000251>
+        rdfs:label  "audiologist"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000166>
+        rdfs:label  "female pelvic medicine and reconstructive surgery (obstetrics and gynecology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000040>
+        rdfs:label  "content about case study"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000221>
+        rdfs:label  "brain injury medicine (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000136>
+        rdfs:label  "emergency medical services (emergency medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000010>
+        rdfs:label  "topic weight measurement process"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000317>
+        rdfs:label  "therapeutic radiology (radiology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000200>
+        rdfs:label  "health care provider performing role"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000293>
+        rdfs:label  "low vision rehabilitation (optometrist)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000106>
+        rdfs:label  "ophthalmology (ophthalmology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000263>
+        rdfs:label  "nutrition, pediatric (dietitian, registered)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000178>
+        rdfs:label  "clinical informatics (pathology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000052>
+        rdfs:label  "content about training document"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000359>
+        rdfs:label  "respite care facility"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000233>
+        rdfs:label  "vascular neurology (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000148>
+        rdfs:label  "adult congenital heart disease (internal medicine)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000022>
+        rdfs:label  "specialty"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000423>
+        rdfs:label  "procedure"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000329>
+        rdfs:label  "trauma surgery (surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000390>
+        rdfs:label  "context_for"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000203>
+        rdfs:label  "pediatric pulmonology (pediatrics)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000118>
+        rdfs:label  "psychiatry (psychiatry and neurology)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_0000001>
+        rdfs:label  "is_template"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000094>
+        rdfs:label  "colon and rectal surgery (colon and rectal surgery)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000360>
+        rdfs:label  "student, health care"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000275>
+        rdfs:label  "acute care (nurse practitioner)"@en .
+
+<http://purl.obolibrary.org/obo/ARG_2000064>
+        rdfs:label  "content about training opportunity"@en .

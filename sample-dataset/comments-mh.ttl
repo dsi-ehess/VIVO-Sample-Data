@@ -1,0 +1,82 @@
+# baseURI: http://data.ehess.fr/ontology/vivo-ehess/comments-mh
+# imports: http://data.ehess.fr/ontology/vivo-ehess/exemple1
+# imports: http://data.ehess.fr/ontology/vivo-ehess/exemple2
+# imports: http://data.ehess.fr/ontology/vivo-ehess/exemple3
+# imports: http://data.ehess.fr/ontology/vivo-ehess/export2
+# imports: http://spinrdf.org/spl
+# imports: http://xmlns.com/foaf/0.1/
+# prefix: comments-mh
+
+@prefix : <http://data.ehess.fr/ontology/vivo-ehess/comments-mh#> .
+@prefix arg: <http://spinrdf.org/arg#> .
+@prefix comments-mh: <http://data.ehess.fr/ontology/vivo-ehess/comments-mh#> .
+@prefix exemple1: <http://data.ehess.fr/ontology/vivo-ehess/exemple1#> .
+@prefix exemple2: <http://data.ehess.fr/ontology/vivo-ehess/exemple2#> .
+@prefix exemple3: <http://data.ehess.fr/ontology/vivo-ehess/exemple3#> .
+@prefix export2: <http://data.ehess.fr/ontology/vivo-ehess/export2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.ehess.fr/individual/2hgtcwtu4>
+  rdfs:comment "MH Tobdraid représente mal les IRI dont le pragma (2hgtcwtu4)commence par un numérique plustot qu'un alphanumérique" ;
+  rdfs:comment "MH le domaine et le PATH pourraient être l'URL du serveur vivo. Aini l'IRI pourrait renvoyer à sa page dans le web" ;
+.
+<http://data.ehess.fr/ontology/vivo-ehess/comments-mh>
+  a owl:Ontology ;
+  rdfs:comment "Les étiquettes des ressources de Vivo ont été francisées dans fr_CA. Pour gagner du temps, elles pourraient être réutilisées dans vivo_fr_FR et adaptées au contexte français." ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess/exemple1> ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess/exemple2> ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess/exemple3> ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess/export2> ;
+  owl:imports <http://spinrdf.org/spl> ;
+  owl:imports <http://xmlns.com/foaf/0.1/> ;
+  owl:versionIRI <http://data.ehess.fr/ontology/vivo-ehess/comments-mh#2020-11-07> ;
+  owl:versionInfo "2020-11-07" ;
+  owl:versionInfo "Created by Michel Héon" ;
+.
+<http://data.ehess.fr/ontology/vivo-ehess/comments-mh#2020-11-07>
+  a owl:Ontology ;
+  rdfs:label "" ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#FNC_0000001>
+  rdfs:comment "MH - Utiliser vivo:Position" ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#FNC_0000019>
+  rdfs:comment "MH - Remplacer cette IRI par vivo:PostdocPosition" ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#ORG_0000002>
+  rdfs:comment "MH - En plus de foaf:Organization, je classerais cette structure aussi sous vivo:ResearchOrganization" ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#ORG_0000003>
+  rdfs:comment "En plus de foaf:Organization, je classerais cette structure aussi sous vivo:ResearchOrganization" ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#ORG_0000004>
+  rdfs:comment "En plus de foaf:Organization, je classerais cette structure aussi sous vivo:ResearchOrganization" ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#ORG_0000008>
+  rdfs:comment "MH - Ici c'est opportun de créer cette classe puisqu'il n'y a pas d'équivalent dans vivo" ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#ORG_0000010>
+  rdfs:comment "MH ici aussi, pourquoi créer 'université' alors que vivo:University existe. Si l'on souhaite faire une discinction des Universités françaises, il faudrait que cette resource soit une sublcassOf de vivo:University et non une equivalenceClass. " ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#PRS_0000001>
+  rdfs:comment "MH Remplace par vivo:FacultyMember et supprimer l'equivalentClass" ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#PRS_0000006>
+  rdfs:comment "MH - est aussi une subclassOf vivo:GraduateStudent" ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#PRS_0000008>
+  rdfs:comment "MH J'ai un doute sur l'utilisation de l'equivalentClass alors qu'il suffirait que d'ajouter un libellé fr-FR à la classe vivo:PostDoc. Je crain que l'utilisation étendu de l'equivalentClass entreine un ralentissement du moteur d'inférence lorsqu'il y aura un grand nombre d'individu" ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#PRS_0000010>
+  rdfs:comment "MH - Utiliser vivo:TeacherRole" ;
+.
+<http://data.ehess.fr/ontology/vivo-fr#REL_0000001>
+  rdfs:comment "MH - D'ordre général, l'equivalentClass devrait s'employer pour encapsuler une restriction et non simplement créer un synonyme qui surcharge le moteur d'inférence et complexifie la lecture du graphe inféré par une génération d'un plus grand nombre de données inférés" ;
+  rdfs:comment "MH - Je propose d'utiliser directement la classe vivo:RelationShip surchargé avec un étiquette rdfs:label de type fr-FR" ;
+.

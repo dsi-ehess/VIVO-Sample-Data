@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>VIVO-Sample-Data</groupId>
+	<artifactId>VIVO-Sample-Data</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
+		<build.timestamp>${maven.build.timestamp}</build.timestamp>
+		<maven-site-plugin.skip>false</maven-site-plugin.skip>
+		<stagingBase>/</stagingBase>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
+	   <dependencies>
+        <dependency>
+            <groupId>org.vivoweb</groupId>
+            <artifactId>vitro-dependencies</artifactId>
+            <version>1.11.2-SNAPSHOT</version>
+            <type>pom</type>
+        </dependency>
+
+    </dependencies>
+</project>

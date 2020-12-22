@@ -1,0 +1,14 @@
+function.ai
+function.cr
+function.dirh
+function.doc
+function.dr
+function.drem
+function.ie
+function.ir
+function.mcf
+function.postdoc
+function.pr
+function.prag
+function.prem
+function.tch
