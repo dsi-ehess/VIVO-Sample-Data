@@ -22,5 +22,10 @@
             <type>pom</type>
         </dependency>
 
-    </dependencies>
+        <dependency>
+        	<groupId>org.vivoweb</groupId>
+        	<artifactId>vitro-api</artifactId>
+        	<version>1.11.2-SNAPSHOT</version>
+        </dependency>
+	   </dependencies>
 </project>
