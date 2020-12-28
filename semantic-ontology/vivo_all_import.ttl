@@ -1,13 +1,27 @@
 # baseURI: http://example.org/all_vivo_import
-# prefix: all_vivo_import
+# imports: http://data.ehess.fr/ontology/vivo-ehess
+# imports: http://data.ehess.fr/ontology/vivo-fr
+# imports: http://vivoweb.org/ontology/core
+# imports: http://vivoweb.org/ontology/core_fr
+# imports: http://vivoweb.org/ontology/core_fr_FR
 
+@prefix : <http://example.org/all_vivo_import#> .
 @prefix all_vivo_import: <http://example.org/all_vivo_import#> .
+@prefix core: <http://vivoweb.org/ontology/core#> .
+@prefix core_fr: <http://vivoweb.org/ontology/core_fr#> .
+@prefix core_fr_FR: <http://vivoweb.org/ontology/core_fr_FR#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vivo-fr: <http://data.ehess.fr/ontology/vivo-fr#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.org/all_vivo_import>
   a owl:Ontology ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-ehess> ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-fr> ;
+  owl:imports <http://vivoweb.org/ontology/core> ;
+  owl:imports <http://vivoweb.org/ontology/core_fr> ;
+  owl:imports <http://vivoweb.org/ontology/core_fr_FR> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
