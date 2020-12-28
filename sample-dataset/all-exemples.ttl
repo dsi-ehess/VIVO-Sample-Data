@@ -3,6 +3,7 @@
 # imports: http://data.ehess.fr/ontology/vivo-ehess/exemple2
 # imports: http://data.ehess.fr/ontology/vivo-ehess/exemple3
 # imports: http://data.ehess.fr/ontology/vivo-ehess/export2
+# imports: http://data.ehess.fr/ontology/vivo-fr
 # imports: http://www.w3.org/2003/01/geo/wgs84_pos
 
 @prefix : <http://data.ehess.fr/ontology/vivo-ehess/all-exemples#> .
@@ -22,6 +23,7 @@
   owl:imports <http://data.ehess.fr/ontology/vivo-ehess/exemple2> ;
   owl:imports <http://data.ehess.fr/ontology/vivo-ehess/exemple3> ;
   owl:imports <http://data.ehess.fr/ontology/vivo-ehess/export2> ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-fr> ;
   owl:imports <http://www.w3.org/2003/01/geo/wgs84_pos> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .

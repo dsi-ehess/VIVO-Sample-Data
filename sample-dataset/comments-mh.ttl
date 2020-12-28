@@ -3,6 +3,7 @@
 # imports: http://data.ehess.fr/ontology/vivo-ehess/exemple2
 # imports: http://data.ehess.fr/ontology/vivo-ehess/exemple3
 # imports: http://data.ehess.fr/ontology/vivo-ehess/export2
+# imports: http://data.ehess.fr/ontology/vivo-fr
 # imports: http://spinrdf.org/spl
 # imports: http://xmlns.com/foaf/0.1/
 # prefix: comments-mh
@@ -33,6 +34,7 @@
   owl:imports <http://data.ehess.fr/ontology/vivo-ehess/exemple2> ;
   owl:imports <http://data.ehess.fr/ontology/vivo-ehess/exemple3> ;
   owl:imports <http://data.ehess.fr/ontology/vivo-ehess/export2> ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-fr> ;
   owl:imports <http://spinrdf.org/spl> ;
   owl:imports <http://xmlns.com/foaf/0.1/> ;
   owl:versionIRI <http://data.ehess.fr/ontology/vivo-ehess/comments-mh#2020-11-07> ;

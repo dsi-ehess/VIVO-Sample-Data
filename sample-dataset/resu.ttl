@@ -1,7 +1,7 @@
 # baseURI: http://data.ehess.fr/ontology/vivo-ehess/DATA-export-Export
 # imports: http://data.ehess.fr/ontology/vivo-ehess
 # imports: http://data.ehess.fr/ontology/vivo-ehess-restriction
-# imports: http://data.ehess.fr/ontology/vivo-fr#
+# imports: http://data.ehess.fr/ontology/vivo-fr
 # imports: http://vivoweb.org/ontology/core
 # imports: http://vivoweb.org/ontology/core_fr_FR
 
@@ -182,7 +182,7 @@ ehess-individual:SpecialistLogiciel
   a owl:Ontology ;
   owl:imports <http://data.ehess.fr/ontology/vivo-ehess> ;
   owl:imports <http://data.ehess.fr/ontology/vivo-ehess-restriction> ;
-  owl:imports vivofr: ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-fr> ;
   owl:imports <http://vivoweb.org/ontology/core> ;
   owl:imports <http://vivoweb.org/ontology/core_fr_FR> ;
 .

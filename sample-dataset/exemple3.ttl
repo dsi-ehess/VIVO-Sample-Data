@@ -1,6 +1,6 @@
 # baseURI: http://data.ehess.fr/ontology/vivo-ehess/exemple3
 # imports: http://data.ehess.fr/ontology/vivo-ehess
-# imports: http://data.ehess.fr/ontology/vivo-fr#
+# imports: http://data.ehess.fr/ontology/vivo-fr
 # imports: http://vivoweb.org/ontology/core
 # imports: http://xmlns.com/foaf/0.1/
 
@@ -92,7 +92,7 @@
 <http://data.ehess.fr/ontology/vivo-ehess/exemple3>
   a owl:Ontology ;
   owl:imports <http://data.ehess.fr/ontology/vivo-ehess> ;
-  owl:imports vivofr: ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-fr> ;
   owl:imports <http://vivoweb.org/ontology/core> ;
   owl:imports foaf: ;
 .

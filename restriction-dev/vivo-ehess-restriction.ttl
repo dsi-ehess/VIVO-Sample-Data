@@ -1,6 +1,6 @@
 # baseURI: http://data.ehess.fr/ontology/vivo-ehess-restriction
 # imports: http://data.ehess.fr/ontology/vivo-ehess
-# imports: http://data.ehess.fr/ontology/vivo-fr#
+# imports: http://data.ehess.fr/ontology/vivo-fr
 # imports: http://vivoweb.org/ontology/core
 
 @prefix : <http://data.ehess.fr/ontology/vivo-ehess-restriction#> .
@@ -137,7 +137,7 @@
   spin:imports <http://topbraid.org/spin/owlrl-all> ;
   spin:imports <http://topbraid.org/spin/rdfsplus> ;
   owl:imports <http://data.ehess.fr/ontology/vivo-ehess> ;
-  owl:imports vivofr: ;
+  owl:imports <http://data.ehess.fr/ontology/vivo-fr> ;
   owl:imports <http://vivoweb.org/ontology/core> ;
 .
 :RESTRICTIONS
